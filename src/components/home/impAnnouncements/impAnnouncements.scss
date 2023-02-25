@@ -162,6 +162,11 @@
     height: 760px;
 }
 
+.modal-content {
+    background-color: black !important;
+    color: white;
+}
+
 @media screen and (min-width: 320px) and (max-width: 768px) {
     .impAnnouncements-tease {
 

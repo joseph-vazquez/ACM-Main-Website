@@ -441,7 +441,7 @@ class Projects extends React.Component {
                                     </p>
                                   </b>{" "}
                                   <br></br>
-                                  {buttonBSpring2023}
+                                  {/*buttonBSpring2023*/}
                                   <br></br>
                                   <br></br>
                                   <h2>
@@ -526,7 +526,7 @@ class Projects extends React.Component {
                                     </p>
                                   </b>{" "}
                                   <br></br>
-                                  {buttonASpring2023}
+                                  {/*buttonASpring2023*/}
                                   <br></br>
                                   <br></br>
                                   <h2>
