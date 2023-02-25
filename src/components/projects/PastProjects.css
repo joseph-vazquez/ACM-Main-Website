@@ -1,0 +1,41 @@
+#past-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(3, 55, 90, 0.5)),
+      url("./img/bluewavecard.jpg");
+  }
+.archive-card {
+  background-image: url("./img/bluewavecard.jpg");
+  background-size: cover;
+}
+
+.archive-flyer {
+  width: 27em !important;
+  margin: auto !important;
+  margin-top: 1em !important;
+}
+
+/**************************** Card Rotation ******************************/
+
+.cardbody {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+.thefront {
+  backface-visibility: hidden;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+/**************************** End Card Rotation ******************************/

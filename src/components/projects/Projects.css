@@ -31,6 +31,19 @@
   padding-left: 3rem;
 }
 
+.projectheader {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(3, 55, 90, 0.5)),
+    url("./img/bluecard.jpg");
+  border: 1px solid white;
+  width: 70%;
+  margin: auto;
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 2em;
+  color: rgb(255, 255, 255);
+  font-style: italic;
+}
+
 .emphasis {
   color: #029cd7;
 }
@@ -40,18 +53,20 @@
 }
 
 .project-card {
-  margin-left: 135px;
   text-align: left;
   color: white;
   padding-top: 30px;
 }
 
+#proj-contents{
+  width:100%;
+}
 .project-nav-link {
   color: white;
 }
 
 .project-nav-link-tab {
-  outline: 1px solid white;
+  outline: 1px solid black;
   margin-left: 25px;
   margin-right: -15px;
 }
@@ -234,6 +249,90 @@ iframe[src*="youtube"] {
   font-size: 2.2rem;
   color: white;
 }
+
+/***************** general CARD styles **********************/
+
+
+.card-title, .card-text{
+  color: black !important;
+}
+
+.card-title{
+  border: 3px solid black;
+  border-radius: 4em;
+  width:50%;
+  margin: auto;
+  padding: 1em 0 1em;
+  background-color: rgb(204, 235, 253);
+}
+.card-img {
+  width: 27em !important;
+  margin: auto !important;
+  margin-top: 1em !important;
+}
+.archivedropdown{
+  padding-right: 0px !important;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.dropdown-menu{
+  background-color: #1b1b35;
+  border: 1px solid #7d7dac;
+}
+
+.project-tab-label{
+  
+  justify-content: center;
+}
+
+/****************** end of CARD styles ****************/
+
+
+/**************general PROJECTS CAROUSEL styles******************/
+.leadercarousel {
+  max-height: 12em;
+  max-width: 12em;
+  margin: auto;
+  background-color: rgb(0, 0, 0);
+}
+.leadercarousel .carousel-inner,
+.leadercarousel img {
+  max-height: 12em;
+}
+.leadercarousel .carousel-caption {
+  position: absolute;
+  top: 63%;
+}
+.leadercarousel h4 {
+  font-size: 1em;
+  background-color: rgba(46, 46, 46, 0.6);
+  padding: 3px 0 3px;
+  border-radius: 1em;
+}
+.leadercarousel .carousel-indicators {
+  bottom: -18px;
+}
+
+@media only screen and (max-width: 768px){
+  .leadercarousel{
+      max-height:10em;
+      max-width:10em;
+      margin: auto;
+      background-color: rgb(0, 0, 0);
+  }
+  .leadercarousel .carousel-inner, .leadercarousel img{
+      max-height:10em;
+      margin: auto;
+  }
+  .leadercarousel .carousel-caption{
+      position: absolute;
+      top: 55%;
+      
+  }
+}
+/****************** end of carousel styles ****************/
+
 
 @media only screen and (max-width: 600px) {
   .project-title-card {

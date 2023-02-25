@@ -1,0 +1,28 @@
+
+#current-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(3, 55, 90, 0.5)),
+    url("./img/bluecard.jpg");
+}
+.current-card {
+  background-image: url("./img/bluecard.jpg");
+  background-size: cover;
+}
+
+.current-flyer {
+  width: 27em !important;
+  margin: auto !important;
+  margin-top: 1em !important;
+}
+
+.currentDesc {
+  background-color: rgb(204, 235, 253);
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+.skills-section {
+  border: 0.5em inset rgb(0, 157, 248);
+  width: 65%;
+  margin: auto;
+  padding: 0.7em 0 0.7em;
+}
