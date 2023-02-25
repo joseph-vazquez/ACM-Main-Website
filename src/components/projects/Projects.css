@@ -276,7 +276,7 @@ iframe[src*="youtube"] {
   border-radius: 5px;
 }
 
-.dropdown-menu{
+.archivedropdown .dropdown-menu{
   background-color: #1b1b35;
   border: 1px solid #7d7dac;
 }
