@@ -41,7 +41,10 @@ const CurrentProjects = (props) => {
   return (
     <Container>
       <Row>
-        <div id="current-header" class="projectheader container-fluid text-center py-4">
+        <div
+          id="current-header"
+          class="projectheader container-fluid text-center py-4"
+        >
           <h1>{props.current.semester}</h1>
         </div>
         <Col md={6}>
@@ -99,6 +102,7 @@ const CurrentProjects = (props) => {
               >
                 {begInfoButton}
               </Button>
+              {/*Join button commented due to expired date
               <Button
                 variant="success"
                 href="https://forms.gle/xw8zgCeCFaWhRPbV9"
@@ -106,6 +110,7 @@ const CurrentProjects = (props) => {
               >
                 Join Now!
               </Button>
+               */}
             </Card.Body>
           </Card>
         </Col>
@@ -163,6 +168,7 @@ const CurrentProjects = (props) => {
               >
                 {advInfoButton}
               </Button>
+              {/*Join button commented due to expired date
               <Button
                 variant="success"
                 href="https://forms.gle/xw8zgCeCFaWhRPbV9"
@@ -170,6 +176,7 @@ const CurrentProjects = (props) => {
               >
                 Join Now!
               </Button>
+              */}
             </Card.Body>
           </Card>
         </Col>
