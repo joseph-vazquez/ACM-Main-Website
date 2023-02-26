@@ -360,7 +360,7 @@ class Board extends React.Component {
                         </div>
                         <div className="row-leaders centered-leader">
                           <BoardLeaders
-                            photo={IMAGES.ACMLogo}
+                            photo={IMAGES.Thien2023}
                             firstName="Thien"
                             lastName="Ho"
                             year="2023"
