@@ -59,14 +59,14 @@
 }
 
 #gold-rectangle {
-  background-color: #b6a15e;
+  background-color: #847423;
   width: 8vw;
   min-width: 62px;
   height: 380px;
 }
 
 #silver-rectangle {
-  background-color: #a5a5a5;
+  background-color: #686868;
   width: 8vw;
   min-width: 62px;
   height: 190px;
@@ -74,7 +74,7 @@
 }
 
 #bronze-rectangle {
-  background-color: #b79153;
+  background-color: #715028;
   width: 8vw;
   min-width: 62px;
   height: 95px;

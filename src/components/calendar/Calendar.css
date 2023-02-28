@@ -19,7 +19,7 @@
 }
 
 .cell {
-    background-color: rgb(36, 37, 48);
+    background-color: #282a2e;
     overflow-y: auto;
     color: white;
     height: 9rem;
@@ -28,7 +28,7 @@
     /* padding-top: .5rem; */
 }
 .empty {
-    background-color: rgb(27, 27, 27);
+    background-color: #1c1d20;
 }
 .event{
     background-color: rgb(58, 60, 77);
@@ -86,7 +86,7 @@
 }
 
 .today {
-    background-color:#029CD7;
+    background-color:#4f5a6e;
     color: white;
 }
 

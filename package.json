@@ -12,6 +12,7 @@
     "animate.css": "^4.1.1",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.2",
+    "caniuse-lite": "^1.0.30001450",
     "firebase": "^7.16.0",
     "firebase-tools": "^7.3.2",
     "google-spreadsheet": "^3.0.13",

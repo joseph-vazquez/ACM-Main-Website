@@ -3,7 +3,7 @@ import "./membership.css"
 import { Card } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css';
 //import Carousel from 'react-bootstrap/Carousel';
-import Regular from './CheckoutComponents/RegularCheckout.js'
+import Regular from './CheckoutComponents/ArchiveRegularCheckout.js'
 
 class Membership extends React.Component {
 
@@ -16,7 +16,7 @@ class Membership extends React.Component {
 			<div id="membership-body">
 				<div>
 					<div className="membership-text">
-						<p>Interested? Join our club!</p>
+						<p>Join our club!</p>
 					</div>
 					<div className="membership-card"></div>
 				</div>
@@ -67,16 +67,14 @@ class Membership extends React.Component {
 							</Carousel>
 						</div>
 					</center> */}
-					<div className = "member-card-header">
+					<Card className="join-card">
 						<Card.Header className="join-card-header text-center">
 							<h2><span className="highlight-text"><b><i>ACM Membership 2022-2023</i></b></span></h2>
 						</Card.Header>
-					</div>
-					<div className="member-body">
-						<Card.Body style={{ backgroundColor: "#00000000", scale: "95%" }}>
+						<Card.Body style={{ backgroundColor: "#424242" }}>
 							<Regular />
 						</Card.Body>
-					</div>
+					</Card>
 					<br></br>
 				</div>
 				<div class="quote-style-2 membership-footer-text">

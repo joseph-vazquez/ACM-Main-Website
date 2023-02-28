@@ -56,9 +56,9 @@ class Sponsors extends React.Component {
                       id="gold-rectangle"
                       onMouseEnter={() =>
                         this.setState({
-                          hoverColorGold: "#b6a15e",
-                          hoverColorSilver: "#b6a15e",
-                          hoverColorBronze: "#b6a15e",
+                          hoverColorGold: "#847423",
+                          hoverColorSilver: "#847423",
+                          hoverColorBronze: "#847423",
                         })
                       }
                       onMouseLeave={() =>
@@ -86,8 +86,8 @@ class Sponsors extends React.Component {
                       id="silver-rectangle"
                       onMouseEnter={() =>
                         this.setState({
-                          hoverColorSilver: "#a5a5a5",
-                          hoverColorBronze: "#a5a5a5",
+                          hoverColorSilver: "#686868",
+                          hoverColorBronze: "#686868",
                         })
                       }
                       onMouseLeave={() =>
@@ -113,7 +113,7 @@ class Sponsors extends React.Component {
                     <div
                       id="bronze-rectangle"
                       onMouseEnter={() =>
-                        this.setState({ hoverColorBronze: "#b79153" })
+                        this.setState({ hoverColorBronze: "#715028" })
                       }
                       onMouseLeave={() =>
                         this.setState({ hoverColorBronze: "#494949" })
