@@ -15,8 +15,6 @@ import {
 } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Projects.css";
-import LegacyProject from "./LegacyProject";
-import NewProject from "./NewProject";
 import CurrentProjects from "./CurrentProjects.js";
 import PastProjects from "./PastProjects.js";
 
