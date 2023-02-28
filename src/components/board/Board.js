@@ -161,22 +161,6 @@ class Board extends React.Component {
                             position="Project Manger: Advanced"
                           />
                         </div>
-                        <div className="row-leaders centered-leader">
-                          <BoardLeaders
-                            photo={IMAGES.Jonathan2022}
-                            firstName="Jonathan"
-                            lastName="Dang"
-                            year="2022"
-                            position="Project Manager: Beginners"
-                          />
-                          <BoardLeaders
-                            photo={IMAGES.Isabella2022}
-                            firstName="Isabella"
-                            lastName="Arreguin"
-                            year="2023"
-                            position="Project Manager: Advanced"
-                          />
-                        </div>
                       </div>
                       <div className="row">
                         <div className="board d-lg-none"></div>

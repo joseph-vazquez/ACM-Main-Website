@@ -51,7 +51,7 @@
 	margin-bottom: 2rem;
 }
 
-@media (max-width: 600px){
+@media (max-width: 860px){
 	.carousel_container{
 		width: 100%;
 		height: 400px;
@@ -59,6 +59,32 @@
 
 	.membership_form{
 		width: auto
+	}
+
+	.member-sections {
+		padding-top: 10px;
+		display: block !important;
+		margin: auto !important;
+		padding-bottom: 50px;
+	}
+
+	.mentorship-section, .pro-dev-section, .project-section, .community-section, .newsletter-section {
+		margin: auto !important;
+		border: 5px solid white;
+		border-radius: 3rem;
+		padding: 20px;
+		width: auto;
+	}
+
+	.membership-text {
+		margin-left: -30px;
+	}
+
+	.images {
+		margin: auto;
+		padding-top: 20px;
+		text-align: center;
+		display: flex;
 	}
 }
 
@@ -112,7 +138,7 @@
 .card{
 	width: auto;
 	height: auto;
-	background-color:#1f1f1f !important;
+	background-color:#00000000 !important;
 	/* padding: 20px;
 	margin: 20px; */
 }
@@ -188,8 +214,12 @@ h2{
 }
 
 .member-description-points{
-	font-size: 16px;
+	font-size: 20px;
 	margin: 10px;
+}
+
+.member-description-points a{
+	text-decoration: underline;
 }
 
 .membership-description-section{
@@ -220,7 +250,7 @@ h2{
   font-family: 'Libre Caslon Text', serif;
 	font-weight: 600;
 	font-size: 1.3rem;
-	margin: 10px;
+	margin: 16px;
 }
 
 .additional-fee{
@@ -237,6 +267,61 @@ h2{
 	cursor: pointer;
 } */
 
-.join-card-header {
+.member-card-header {
 	background-color: black;
+	border: 3px solid rgb(34, 88, 154);
+	border-radius: 3rem;
+	margin-bottom: 20px;
+}
+
+.member-body {
+	border: 3px solid rgb(34, 88, 154);
+	background-color: black;
+	border-radius: 3rem;
+	margin-bottom: -15px;
+}
+
+.member-sections {
+	display: inline-flex;
+	margin: auto;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+.info-header {
+	font-size: 25px;
+	font-weight: 600;
+	padding-bottom: 10px;
+	border-bottom: 5px solid rgb(34, 88, 154);
+}
+
+.mentorship-section, .pro-dev-section, .project-section, .community-section, .newsletter-section {
+	margin: auto !important;
+	border: 5px solid white;
+	border-radius: 3rem;
+	padding: 20px;
+	width: auto;
+}
+
+.register-info {
+	font-size: 25px;
+	font-weight: 600;
+	border-top: 5px solid rgb(34, 88, 154);
+	padding-top: 10px;
+}
+
+.register-body {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.images {
+	margin: auto;
+	padding-top: 20px;
+	text-align: center;
+	display: block;
+}
+
+.images img {
+	border: 5px solid white;
 }
