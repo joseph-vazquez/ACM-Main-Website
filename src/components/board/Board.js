@@ -75,16 +75,21 @@ class Board extends React.Component {
                     <Tab.Pane eventKey="first">
                       <Tab.Container>
                         <div className="row-leaders all-row-leaders">
-                          <h2 className="leader-header">LEADER OF THE MONTH</h2>
+                          <h2 className="leader-header">LEADERS OF THE MONTH</h2>
                           <div className="col-leaders justify-content-center image-contain">
                             <img
                               className="board-leader-winner board-leader-profile"
-                              src={IMAGES.Nshan2022}
+                              src={IMAGES.Rana2022}
+                              alt={"Leader of the Month"}
+                            ></img>
+                            <img
+                              className="board-leader-winner board-leader-profile"
+                              src={IMAGES.John2023}
                               alt={"Leader of the Month"}
                             ></img>
                           </div>
-                          <h2 className="leader-info">Nshan Kazaryan</h2>
-                          <h2 className="leader-info">(November 2022)</h2>
+                          <h2 className="leader-info">Rana Ashour and John Hernandez</h2>
+                          <h2 className="leader-info">(February 2023)</h2>
                         </div>
                       </Tab.Container>
                       <div className="row">
