@@ -207,7 +207,7 @@ h2 {
 
 .board-leader-profile {
   display: inline;
-  margin: 0 auto;
+  margin: 0 1em 1em;
 }
 .image-contain {
   width: 95vw;
