@@ -12,6 +12,7 @@ import Calendar from "./components/calendar/Calendar";
 import Sponsor from "./components/sponsor/Sponsor";
 import Membership from "./components/membership/Membership";
 import ContactUs from "./components/contactus/ContactUs";
+import FAQ from "./components/faq/FAQ";
 import Events from "./components/events/Events";
 import Projects from "./components/projects/Projects";
 import Professional from "./components/professional-events/Professional";
@@ -68,7 +69,8 @@ class App extends React.Component {
           <Route path="/aboutus" component={AboutUs} />
           <Route path="/calendar" component={Calendar} />
           <Route path="/membership" component={Membership} />
-          <Route path="/contactus" component={ContactUs} />
+          <Route path="/faq" component={FAQ} />
+          <Route path="/contactus" component={ContactUs}/>
           <Route path="/events" component={Events} />
           <Route path="/projects" component={Projects} />
           <Route path="/professional" component={Professional} />

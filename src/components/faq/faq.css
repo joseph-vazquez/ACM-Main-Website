@@ -11,9 +11,10 @@
   padding-left: 1em;
   background-color: #32617b;
   border-radius: 1em;
-  margin: 0.5em;
+  margin: 1em;
   text-align: left;
 }
+
 .txtb label {
   display: block;
   text-align: left;
@@ -57,10 +58,10 @@
   color: white;
 }
 
-.contact-header {
+.header {
   height: 80vh;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
-    url("./images/convention.png");
+    url("./images/header-background-image.jpg");
   background-size: cover !important;
   background-attachment: fixed !important;
   background-position: center;
@@ -85,7 +86,6 @@
   line-height: 1.2;
   text-align: left;
   padding-top: 25vh;
-  margin-top: -50px;
   grid-template-rows: 1fr 1.4fr;
   padding-left: 3rem;
 }
@@ -143,10 +143,34 @@
   color: white !important;
 }
 
+.contact-us-logo {
+  max-height: 250px;
+  max-width: 250px;
+  display: flexbox;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-us-logo-2 {
+  max-height: 60px;
+  max-width: 60px;
+  display: flexbox;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.contact-info {
+  font-size: 20px;
+}
+
+.contact-us-btn {
+  align-items: center;
+}
+
 @media screen and (max-width: 800px) {
   .header {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
-      url("./images/convention.png") center;
+      url("./images/header-background-portrait-image.png") center;
   }
 
   .header-text {

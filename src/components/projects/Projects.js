@@ -1,16 +1,9 @@
 import React from "react";
 import firebase from "../professional-events/firebaseConfig.js";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
 import {
-  Row,
-  Col,
   Tab,
   Nav,
-  Button,
-  Container,
-  Dropdown,
-  DropdownButton,
   NavDropdown,
 } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
