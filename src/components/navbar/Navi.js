@@ -63,7 +63,7 @@ class Navi extends React.Component {
               <NavDropdown.Item href="/board">
                 <div className="nav-dropdown-text">our board</div>
               </NavDropdown.Item>
-              <NavDropdown.Item href="/contactus">
+              <NavDropdown.Item href="/faq">
                 <div className="nav-dropdown-text">faq</div>
               </NavDropdown.Item>
             </NavDropdown>
@@ -81,6 +81,7 @@ class Navi extends React.Component {
 
             <Nav.Link href="/events">calendar</Nav.Link>
             <Nav.Link href="/sponsor">sponsors</Nav.Link>
+            <Nav.Link href="/contactus">contact us</Nav.Link>
             {/* <Nav.Link href="/contactus">contact us</Nav.Link> */}
           </Nav>
           <Nav className="socials">
