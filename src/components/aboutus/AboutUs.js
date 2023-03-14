@@ -54,7 +54,7 @@ class AboutUs extends React.Component {
                   animateOnce="true"
                 >
                   <li class="list-group-item mission-statement-item">
-                    Host programming workshops that teach projects and new
+                    Host programming workshops that teach <br /> projects and new
                     technologies outside of classes at CSULA.
                   </li>
                 </AnimationOnScroll>
@@ -65,7 +65,7 @@ class AboutUs extends React.Component {
                   animateOnce="true"
                 >
                   <li class="list-group-item mission-statement-item">
-                    Share knowledge and advice of the computing field in our
+                    Share knowledge and advice of the computing field <br /> in our
                     mentorship program.
                   </li>
                 </AnimationOnScroll>
@@ -76,7 +76,7 @@ class AboutUs extends React.Component {
                   animateOnce="true"
                 >
                   <li class="list-group-item mission-statement-item">
-                    Provide professional development workshops to help members
+                    Provide professional development workshops to <br /> help members
                     prepare for the workforce.
                   </li>
                 </AnimationOnScroll>
@@ -87,7 +87,7 @@ class AboutUs extends React.Component {
                   animateOnce="true"
                 >
                   <li class="list-group-item mission-statement-item">
-                    Build a community through our events, promoting involvement
+                    Build a community through our events, <br /> promoting involvement
                     outside of campus.
                   </li>
                 </AnimationOnScroll>
@@ -98,7 +98,7 @@ class AboutUs extends React.Component {
                   animateOnce="true"
                 >
                   <li class="list-group-item mission-statement-item">
-                    Serve students and those interested in the betterment of our
+                    Serve students and those interested in the betterment <br /> of our
                     Los Angeles community.
                   </li>
                 </AnimationOnScroll>
@@ -249,7 +249,7 @@ class AboutUs extends React.Component {
                               about the club!
                             </li>
                             <li lassName="join-item">
-                              To learn about the benefits of being an ACM
+                              To learn about the benefits of being an <br /> ACM
                               member, click the button below:
                             </li>
                             <Button href="/membership">Membership</Button>
