@@ -96,21 +96,20 @@ const CurrentProjects = (props) => {
               <Button
                 onClick={(e) => infoButtonHandler(e.target.value)}
                 aria-expanded={begOpen}
-                variant="primary"
+                variant="warning"
                 size="sm"
                 value={"beg"}
               >
                 {begInfoButton}
               </Button>
-              {/*Join button commented due to expired date
               <Button
                 variant="success"
                 href="https://forms.gle/xw8zgCeCFaWhRPbV9"
                 size="sm"
+                disabled
               >
                 Join Now!
               </Button>
-               */}
             </Card.Body>
           </Card>
         </Col>
@@ -159,7 +158,7 @@ const CurrentProjects = (props) => {
                 </Collapse>
               </Card.Text>
               <Button
-                variant="primary"
+                variant="warning"
                 size="sm"
                 onClick={(e) => infoButtonHandler(e.target.value)}
                 aria-expanded={advOpen}
@@ -168,15 +167,14 @@ const CurrentProjects = (props) => {
               >
                 {advInfoButton}
               </Button>
-              {/*Join button commented due to expired date
               <Button
                 variant="success"
                 href="https://forms.gle/xw8zgCeCFaWhRPbV9"
                 size="sm"
+                disabled
               >
                 Join Now!
               </Button>
-              */}
             </Card.Body>
           </Card>
         </Col>
