@@ -1,8 +1,15 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./navi.scss";
 import "bootstrap/dist/css/bootstrap.css";
 import logo from "./acmlogo1.png";
-import { Navbar, NavDropdown, Nav, Button, Modal, NavbarBrand} from "react-bootstrap";
+import {
+  Navbar,
+  NavDropdown,
+  Nav,
+  Button,
+  Modal,
+  NavbarBrand,
+} from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -22,18 +29,35 @@ function ElectionResults() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}> Election Results </Button>
-      <Modal show={show} onHide={handleClose} backdrop="static" keyboard={false}>
+      <Button variant="primary" onClick={handleShow}>
+        {" "}
+        Election Results{" "}
+      </Button>
+      <Modal
+        show={show}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+      >
         <Modal.Header closeButton>
-          <Modal.Title>Congratuations to the future Leaders for the 2023-2024 school year!!</Modal.Title>
+          <Modal.Title>
+            Congratuations to the future Leaders for the 2023-2024 school year!!
+          </Modal.Title>
         </Modal.Header>
-        <Modal.Body> ⭐ President: Keyvan M Kani <br /> ⭐ Vice President: Andres Dominguez <br /> ⭐ Treasurer: Joseph Acosta <br /> 
-        ⭐ Project Manager: Shambhavi Bhandari <br /> ⭐ Project Officers: Charlie Dominguez & Thien Ho <br /> 
-        ⭐ Social Media Officer: Ivan Ho <br /> <br /> Thanking all candidates that have ran for this election, <br /> 
+        <Modal.Body>
+          {" "}
+          ⭐ President: Keyvan M Kani <br /> ⭐ Vice President: Andres Dominguez{" "}
+          <br /> ⭐ Treasurer: Joseph Acosta <br />
+          ⭐ Project Manager: Shambhavi Bhandari <br /> ⭐ Project Officers:
+          Charlie Dominguez & Thien Ho <br />
+          ⭐ Social Media Officer: Ivan Ho <br /> <br /> Thanking all candidates
+          that have ran for this election, <br />
           and for everyone that has supported our candidates!
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={handleClose}>Close</Button>
+          <Button variant="primary" onClick={handleClose}>
+            Close
+          </Button>
         </Modal.Footer>
       </Modal>
     </>
@@ -126,9 +150,9 @@ class Navi extends React.Component {
               ></FontAwesomeIcon>
             </Navbar.Brand>
           </Nav>
-          <div class = "election">
+          {/* <div class = "election">
             <ElectionResults />
-          </div>
+          </div> */}
           <div class="membership-btn">
             <Nav.Link href="/membership">
               <Button variant="light">Membership</Button>
