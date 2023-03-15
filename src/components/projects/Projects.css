@@ -131,6 +131,10 @@
   padding-top: 10px;
 }
 
+.date-disclaimer{
+  color: rgb(0, 217, 255);
+}
+
 .disclaimer_info {
   /* padding-left: 20px;
     padding-right: 20px; */
