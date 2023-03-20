@@ -28,7 +28,6 @@ class ImpAnnouncements extends Component {
 
   render() {
     let eventPosters = [
-      "./images/ACM-Spring2023-Scholarships.png",
       "./images/spring2023-pro-dev.png",
     ];
 
