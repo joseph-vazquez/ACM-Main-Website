@@ -54,7 +54,7 @@ class AboutUs extends React.Component {
                   animateOnce="true"
                 >
                   <li class="list-group-item mission-statement-item">
-                    Host programming workshops that teach <br /> projects and new
+                    Host programming workshops that teach <br /> <br /> projects and new
                     technologies outside of classes at CSULA.
                   </li>
                 </AnimationOnScroll>
