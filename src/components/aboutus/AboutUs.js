@@ -14,15 +14,17 @@ class AboutUs extends React.Component {
     let acmImageCaptions = ["2021-2022 ACM Leaders", "2019-2020 ACM Leaders"];
     return (
       <div>
-        {/* <div className="about-us-text">
-            <p>About Us</p>
-          </div> */}
-        {/* <div className="about-us-card"><span className="header-text">About us</span></div> */}
+        {/* Current */}
+        {/*      
         <div className="header-container">
           <div className="about-us-card"></div>
           <span id="header-text">About us</span>
-        </div>
+        </div> */}
 
+        <div className="header-box">
+          <div id="header-title">About us</div>
+          <div id="blur-effect"></div>
+        </div>
         <Jumbotron>
           {/* <div id="blue-rectangle"></div> */}
 
@@ -54,8 +56,8 @@ class AboutUs extends React.Component {
                   animateOnce="true"
                 >
                   <li class="list-group-item mission-statement-item">
-                    Host programming workshops that teach <br /> <br /> projects and new
-                    technologies outside of classes at CSULA.
+                    Host programming workshops that teach <br /> <br /> projects
+                    and new technologies outside of classes at CSULA.
                   </li>
                 </AnimationOnScroll>
 
@@ -65,8 +67,8 @@ class AboutUs extends React.Component {
                   animateOnce="true"
                 >
                   <li class="list-group-item mission-statement-item">
-                    Share knowledge and advice of the computing field <br /> in our
-                    mentorship program.
+                    Share knowledge and advice of the computing field <br /> in
+                    our mentorship program.
                   </li>
                 </AnimationOnScroll>
 
@@ -76,8 +78,8 @@ class AboutUs extends React.Component {
                   animateOnce="true"
                 >
                   <li class="list-group-item mission-statement-item">
-                    Provide professional development workshops to <br /> help members
-                    prepare for the workforce.
+                    Provide professional development workshops to <br /> help
+                    members prepare for the workforce.
                   </li>
                 </AnimationOnScroll>
 
@@ -87,8 +89,8 @@ class AboutUs extends React.Component {
                   animateOnce="true"
                 >
                   <li class="list-group-item mission-statement-item">
-                    Build a community through our events, <br /> promoting involvement
-                    outside of campus.
+                    Build a community through our events, <br /> promoting
+                    involvement outside of campus.
                   </li>
                 </AnimationOnScroll>
 
@@ -98,8 +100,8 @@ class AboutUs extends React.Component {
                   animateOnce="true"
                 >
                   <li class="list-group-item mission-statement-item">
-                    Serve students and those interested in the betterment <br /> of our
-                    Los Angeles community.
+                    Serve students and those interested in the betterment <br />{" "}
+                    of our Los Angeles community.
                   </li>
                 </AnimationOnScroll>
               </ul>
