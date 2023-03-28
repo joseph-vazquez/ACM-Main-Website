@@ -2,7 +2,7 @@ import React from "react";
 import firebase from "../professional-events/firebaseConfig.js";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import { Col, Tab, Nav} from "react-bootstrap";
+import { Col, Tab, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Programs.css";
 import Mentorship from "./Mentorship.js";
@@ -64,19 +64,14 @@ class Programs extends React.Component {
       "./pro-dev-mentors/Gerardo.jpg",
       "./pro-dev-mentors/wilson.jpg",
     ];
-    let proDevNameS2023 = [
-      "Daniel Ramirez",
-      "Gerardo Ibarra",
-      "Wilson Thomas",
-    ];
+    let proDevNameS2023 = ["Daniel Ramirez", "Gerardo Ibarra", "Wilson Thomas"];
     return (
       <div className="programs-body">
-        <div className="mentor-title-text">
-          <p>Interested in improving?</p>
-          <p>Participate in our PRO-DEV Workshops for Spring 2023!</p>
+        <div className="prodev-header-container">
+          <div id="prodev-header-title">
+            Participate in our PRO-DEV Workshops for Spring 2023!
+          </div>
         </div>
-        <div className="mentorship-title-card"></div>
-
         {/* 
                 Remember to update dates in the disclaimer: 
                 1. Mentorship program signups open
@@ -145,7 +140,7 @@ class Programs extends React.Component {
               <Tab.Content className="programs-tab-content">
                 <Tab.Pane eventKey={"current"}>
                   <Mentorship mentorship={this.state.currentProgram} />
-                  <div class = "border-carousel"></div>
+                  <div class="border-carousel"></div>
                   <h2>
                     ❖{" "}
                     <span className="highlight-text">
@@ -156,25 +151,23 @@ class Programs extends React.Component {
                   <div className="mentor-carousel">
                     <Carousel infiniteLoop>
                       {proDevImageS2023.map((value, index) => {
-                          return (
+                        return (
                           <div>
                             <img
                               className="carousel-leader-image"
                               src={require("" + value)}
                               alt="leader"
                             />
-                            <p className="legend">
-                              {proDevNameS2023[index]}
-                            </p>
+                            <p className="legend">{proDevNameS2023[index]}</p>
                           </div>
                         );
                       })}
                     </Carousel>
                   </div>
-              </Tab.Pane>
+                </Tab.Pane>
                 <Tab.Pane eventKey={"archive"}>
                   <ArchiveProgram mentorshipList={this.state.prevMentorship} />
-              </Tab.Pane>
+                </Tab.Pane>
               </Tab.Content>
             )}
           </Tab.Container>

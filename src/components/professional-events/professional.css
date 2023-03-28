@@ -1,56 +1,28 @@
-.event-card {
-  height: 85vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
-    url("./images/header-background-image.jpg") center;
+.events-header-container {
+  height: 80vh;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 153, 255, 0.4)),
+    url("./images/header-background-image.png") center top;
   background-size: cover !important;
-  background-position: center;
-  background-attachment: fixed;
-  align-self: center;
-  filter: blur(1px);
-  font-size: 4.4rem;
-  color: white;
-  opacity: 0.6;
-  font-weight: bold;
-  grid-row: 1/2;
-  grid-column: 2/3;
 }
-.event-text {
-  height: 30vh;
-  width: 100%;
+
+#events-header-title {
   position: absolute;
-  z-index: 2;
-  font-size: 3.5rem;
-  color: white;
-  font-weight: bold;
-  line-height: 1.2;
-  text-align: left;
-  padding-top: 32vh;
-  /* display: grid; */
-  grid-template-rows: 1fr 1.4fr;
-  padding-left: 3rem;
+  z-index: 1;
+  font-size: 5rem;
+  top: 30%;
+  left: 10%;
 }
+
+#events-blur-effect {
+  display: none;
+}
+
 .events-container {
   background-color: black !important;
-  /* height: 100% !important;
-  text-align: left !important;
-  display: grid;
-  width: 100%; */
 }
-
-/* .justify-content-md-center{
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 50px 30px ;
-  margin-bottom: 3rem;
-  margin-left: auto;
-} */
-
-/* .upcoming-events {
-  width: 90%;
-}
-
-.semester-events {
-  width: 90%;
-} */
 
 .events-main-text {
   height: 100%;
@@ -87,20 +59,6 @@
   padding-left: 3rem;
   margin-bottom: 0 !important;
   background-color: #1f1f1f !important;
-}
-
-.events-main-background {
-  height: 80vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url("./images/events-background.jpg") no-repeat center !important;
-  background-size: cover !important;
-  align-self: center;
-  font-size: 4.4rem;
-  color: white;
-  opacity: 0.6;
-  font-weight: bold;
-  grid-row: 1/2;
-  grid-column: 2/3;
 }
 
 .events-header {
@@ -185,5 +143,18 @@
     text-align: center;
     width: 100%;
     margin-left: 0 !important;
+  }
+
+  .events-header-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 153, 255, 0.4)),
+      url("./images/header-portrait-background-image.jpg") center top;
+  }
+
+  #events-header-title {
+    position: absolute;
+    z-index: 1;
+    font-size: 3.5rem;
+    top: 30%;
+    left: 10%;
   }
 }

@@ -34,7 +34,8 @@ class Board extends React.Component {
   render() {
     return (
       <div>
-        <div>
+        {/* Current */}
+        {/* <div>
           <div className="board-text">
             <p>
               The team that makes ACM special at CSULA...
@@ -43,6 +44,16 @@ class Board extends React.Component {
             </p>
           </div>
           <div className="board-card"></div>
+        </div> */}
+
+        {/* test */}
+        <div className="board-header-container">
+          <div id="board-header-title">
+            The team that makes ACM special at CSULA
+            <br></br>
+            Meet our leaders!
+          </div>
+          <div id="blur-effect"></div>
         </div>
 
         <div className="body container">
@@ -75,7 +86,9 @@ class Board extends React.Component {
                     <Tab.Pane eventKey="first">
                       <Tab.Container>
                         <div className="row-leaders all-row-leaders">
-                          <h2 className="leader-header">LEADERS OF THE MONTH</h2>
+                          <h2 className="leader-header">
+                            LEADERS OF THE MONTH
+                          </h2>
                           <div className="col-leaders justify-content-center image-contain">
                             <img
                               className="board-leader-winner board-leader-profile"
@@ -88,7 +101,9 @@ class Board extends React.Component {
                               alt={"Leader of the Month"}
                             ></img>
                           </div>
-                          <h2 className="leader-info">Rana Ashour and John Hernandez</h2>
+                          <h2 className="leader-info">
+                            Rana Ashour and John Hernandez
+                          </h2>
                           <h2 className="leader-info">(February 2023)</h2>
                         </div>
                       </Tab.Container>
@@ -210,9 +225,7 @@ class Board extends React.Component {
                             position="Web Officer"
                           />
                         </div>
-                        <div className="row-leaders centered-leader">
-                          
-                        </div>
+                        <div className="row-leaders centered-leader"></div>
                         <div className="row-leaders centered-leader">
                           {/* <BoardLeaders photo={IMAGES.Vacant} firstName="Vacant" lastName="" year="2022" position="Finance Officer" /> */}
                           {/* <BoardLeaders photo={IMAGES.Vacant} firstName="Vacant" lastName="" year="2022" position="Administrative Officer" /> */}

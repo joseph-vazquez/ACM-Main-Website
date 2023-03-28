@@ -57,11 +57,9 @@ class Professional extends React.Component {
   render() {
     return (
       <div className="events-container">
-        <div>
-          <div className="event-text">
-            <p>Events</p>
-          </div>
-          <div className="event-card"></div>
+        <div className="events-header-container">
+          <div id="events-header-title">Events</div>
+          <div id="events-blur-effect"></div>
         </div>
 
         <div className="upcoming-events mx-auto mb-5">
@@ -144,67 +142,67 @@ class Professional extends React.Component {
         <div className="past-events mx-auto">
           <p className="text-center events-header">Past Events</p>
           <div class="professional-slideshow">
-                <div class="images">
-                <Image
-                  style={{ width: "350px", height: "30rem", margin: "1em" }}
-                  src={require("./images/google-ama-event-fall-2022.jpg")}
-                  thumbnail
-                />
-                <Image
-                  style={{ width: "350px", height: "30rem", margin: "1em" }}
-                  src={require("./images/Hackathon-Flyer-Fall-2022.png")}
-                  thumbnail
-                />
-                <Image
-                  style={{ width: "350px", height: "30rem", margin: "1em" }}
-                  src={require("./images/Mentorship-fall-2022.png")}
-                  thumbnail
-                />
-                <Image
-                  style={{ width: "350px", height: "30rem", margin: "1em" }}
-                  src={require("./images/Black-Panther-Wakanda-Forever-fall-2022.png")}
-                  thumbnail
-                />
-                <Image
-                  style={{ width: "350px", height: "30rem", margin: "1em" }}
-                  src={require("./images/github-workshop.PNG")}
-                  thumbnail
-                />
-                <Image
-                  style={{ width: "350px", height: "30rem", margin: "1em" }}
-                  src={require("./images/mwd-jpl-spring-2019.png")}
-                  thumbnail
-                />
-                <Image
-                  style={{ width: "350px", height: "30rem", margin: "1em" }}
-                  src={require("./images/spring-2019-resume-workshop.png")}
-                  thumbnail
-                />
-                <Image
-                  style={{ width: "350px", height: "30rem", margin: "1em" }}
-                  src={require("./images/richard-fung-2018-google.png")}
-                  thumbnail
-                />
-                <Image
-                  style={{ width: "350px", height: "30rem", margin: "1em" }}
-                  src={require("./images/internship.png")}
-                  thumbnail
-                />
-                <Image
-                  style={{ width: "350px", height: "30rem", margin: "1em" }}
-                  src={require("./images/manny-sanchez-lockheed-spring-2019.png")}
-                  thumbnail
-                />
-                <Image
-                  style={{ width: "350px", height: "30rem", margin: "1em" }}
-                  src={require("./images/linkedin-handshake-workshop.png")}
-                  thumbnail
-                />
-                 <Image
-                  style={{ width: "350px", height: "30rem", margin: "1em" }}
-                  src={require("./images/google-ama-event-fall-2022.jpg")}
-                  thumbnail
-                />
+            <div class="images">
+              <Image
+                style={{ width: "350px", height: "30rem", margin: "1em" }}
+                src={require("./images/google-ama-event-fall-2022.jpg")}
+                thumbnail
+              />
+              <Image
+                style={{ width: "350px", height: "30rem", margin: "1em" }}
+                src={require("./images/Hackathon-Flyer-Fall-2022.png")}
+                thumbnail
+              />
+              <Image
+                style={{ width: "350px", height: "30rem", margin: "1em" }}
+                src={require("./images/Mentorship-fall-2022.png")}
+                thumbnail
+              />
+              <Image
+                style={{ width: "350px", height: "30rem", margin: "1em" }}
+                src={require("./images/Black-Panther-Wakanda-Forever-fall-2022.png")}
+                thumbnail
+              />
+              <Image
+                style={{ width: "350px", height: "30rem", margin: "1em" }}
+                src={require("./images/github-workshop.PNG")}
+                thumbnail
+              />
+              <Image
+                style={{ width: "350px", height: "30rem", margin: "1em" }}
+                src={require("./images/mwd-jpl-spring-2019.png")}
+                thumbnail
+              />
+              <Image
+                style={{ width: "350px", height: "30rem", margin: "1em" }}
+                src={require("./images/spring-2019-resume-workshop.png")}
+                thumbnail
+              />
+              <Image
+                style={{ width: "350px", height: "30rem", margin: "1em" }}
+                src={require("./images/richard-fung-2018-google.png")}
+                thumbnail
+              />
+              <Image
+                style={{ width: "350px", height: "30rem", margin: "1em" }}
+                src={require("./images/internship.png")}
+                thumbnail
+              />
+              <Image
+                style={{ width: "350px", height: "30rem", margin: "1em" }}
+                src={require("./images/manny-sanchez-lockheed-spring-2019.png")}
+                thumbnail
+              />
+              <Image
+                style={{ width: "350px", height: "30rem", margin: "1em" }}
+                src={require("./images/linkedin-handshake-workshop.png")}
+                thumbnail
+              />
+              <Image
+                style={{ width: "350px", height: "30rem", margin: "1em" }}
+                src={require("./images/google-ama-event-fall-2022.jpg")}
+                thumbnail
+              />
             </div>
           </div>
         </div>
