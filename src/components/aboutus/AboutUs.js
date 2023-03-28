@@ -21,8 +21,8 @@ class AboutUs extends React.Component {
           <span id="header-text">About us</span>
         </div> */}
 
-        <div className="header-box">
-          <div id="header-title">About us</div>
+        <div className="aboutus-header-container">
+          <div id="aboutus-header-title">About us</div>
           <div id="blur-effect"></div>
         </div>
         <Jumbotron>

@@ -1,34 +1,18 @@
-.sponsors-card {
+.sponsor-header-container {
   height: 80vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
-    url("./images/professional-background.jpg") center;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 153, 255, 0.4)),
+    url("./images/professional-background.jpg") center center;
   background-size: cover !important;
-  /* background-position: center; */
-  background-attachment: fixed !important;
-  align-self: center;
-  filter: blur(1px);
-  font-size: 4.4rem;
-  color: white;
-  opacity: 0.6;
-  font-weight: bold;
-  grid-row: 1/2;
-  grid-column: 2/3;
 }
-
-.sponsors-text {
-  height: 30vh;
-  width: 100%;
+#sponsor-header-title {
   position: absolute;
-  z-index: 2;
-  font-size: 3.5rem;
-  color: white;
-  font-weight: bold;
-  line-height: 1.2;
-  text-align: left;
-  padding-top: 32vh;
-  /* display: grid; */
-  grid-template-rows: 1fr 1.4fr;
-  padding-left: 3rem;
+  z-index: 1;
+  font-size: 5rem;
+  top: 30%;
+  left: 10%;
 }
 
 .jumbotron {
@@ -146,6 +130,18 @@
   #bronze-rectangle {
     width: 13vw;
     margin-left: -1.9em;
+  }
+
+  .sponsor-header-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 153, 255, 0.4)),
+      url("./images/professional-background.jpg") right center;
+  }
+  #sponsor-header-title {
+    position: absolute;
+    z-index: 1;
+    font-size: 3.5rem;
+    top: 30%;
+    left: 10%;
   }
 }
 

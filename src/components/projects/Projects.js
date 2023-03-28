@@ -1,11 +1,7 @@
 import React from "react";
 import firebase from "../professional-events/firebaseConfig.js";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import {
-  Tab,
-  Nav,
-  NavDropdown,
-} from "react-bootstrap";
+import { Tab, Nav, NavDropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Projects.css";
 import CurrentProjects from "./CurrentProjects.js";
@@ -46,12 +42,12 @@ class Projects extends React.Component {
   render() {
     return (
       <div className="project-body">
-        <div>
-          <div className="project-title-text">
-            <p>Looking for experience?</p>
-            <p>Participate in our projects!</p>
+        <div className="project-header-container">
+          <div id="project-header-title">
+            Looking for experience?
+            <br></br>
+            Participate in our project workshops!
           </div>
-          <div className="project-title-card"></div>
         </div>
         {/*
                 Remember to update dates in the disclaimer:
@@ -78,14 +74,22 @@ class Projects extends React.Component {
           <br></br>
           <div className="disclaimer">
             <b>
-              3. <span class="date-disclaimer"> Sign-up due date has passed. Wait until next semester</span>
+              3.{" "}
+              <span class="date-disclaimer">
+                {" "}
+                Sign-up due date has passed. Wait until next semester
+              </span>
             </b>
           </div>
         </div>
         {this.state.currentProj && this.state.archiveProj && (
           <Tab.Container defaultActiveKey={this.state.currentProjSem}>
             <Nav className="project-tab-label px-3 mx-auto" variant="pills">
-              <NavDropdown className="archivedropdown btn-primary text-center" title="Archive" menuVariant="dark">
+              <NavDropdown
+                className="archivedropdown btn-primary text-center"
+                title="Archive"
+                menuVariant="dark"
+              >
                 {this.state.archiveProj.map((sem) => (
                   <NavDropdown.Item eventKey={sem.semester}>
                     {sem.semester}
@@ -106,8 +110,8 @@ class Projects extends React.Component {
                 <CurrentProjects current={this.state.currentProj} />
               </Tab.Pane>
               {this.state.archiveProj.map((sem) => (
-                <Tab.Pane eventKey={sem.semester} >
-                  <PastProjects archive={sem}/>
+                <Tab.Pane eventKey={sem.semester}>
+                  <PastProjects archive={sem} />
                 </Tab.Pane>
               ))}
             </Tab.Content>
