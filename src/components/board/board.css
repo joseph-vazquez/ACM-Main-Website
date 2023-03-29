@@ -1,19 +1,35 @@
-.board-header-container {
+.board-card {
   height: 80vh;
-  color: white;
-  font-weight: bold;
-  position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 153, 255, 0.4)),
-    url("../aboutus/images/board-background.jpg") center top;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
+    url("../aboutus/images/board-background.jpg") center;
   background-size: cover !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  margin-top: auto;
+  filter: blur(1px);
+  font-size: 4.4rem;
+  color: white;
+  opacity: 0.6;
+  font-weight: bold;
 }
 
-#board-header-title {
+.board-text {
+  height: 30vh;
+  width: 100%;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
+  font-family: Roboto;
   font-size: 3.5rem;
-  top: 40%;
-  left: 10%;
+  color: white;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  padding-top: 32vh;
+
+  /* display: grid; */
+  grid-template-rows: 1fr 1.4fr;
+  padding-left: 3rem;
 }
 
 .body {
@@ -40,14 +56,7 @@
   padding: 0px !important;
 }
 
-.row-leaders {
-  width: 98vw;
-  margin-bottom: 1rem;
-}
 
-.all-row-leaders {
-  margin-bottom: 3rem;
-}
 
 .small-header {
   text-transform: uppercase;
@@ -232,16 +241,61 @@ h2 {
   margin-top: 5px;
   margin-right: 10px;
 }
+/************New board style*************************************/
+.boardcontainer {
+  margin: auto !important;
+  border: 2px solid rgb(0, 232, 248);
+  background-image: url("./img/bluebackdrop.jpg");
+  background-size: cover;
+}
 
-@media only screen and (max-width: 600px) {
-  #board-header-title {
-    position: absolute;
-    z-index: 1;
-    font-size: 2.5rem;
-    top: 40%;
-    left: 10%;
+.leader-of-the-month {
+  color: white;
+  width: 98vw;
+  margin: 2em auto 2em;
+}
+
+.groupheader {
+  text-align: center;
+  font-size: xx-large;
+}
+
+.leadercontainer {
+  min-width: 390px;
+  max-width: 390px;
+  height: 170px;
+  float: none;
+  margin: 1.2em auto 1.2em;
+  border: 2px solid rgb(0, 232, 248);
+  background-color: #0256a5 !important;
+}
+.role{
+  color: #c5c5c5 !important;
+}
+.leaderimg {
+  object-fit: cover;
+  max-width: 150px;
+  max-height: 150px;
+  margin: 0px !important;
+  filter: blur(0.3px);
+}
+@media only screen and (max-width: 430px) {
+  .leadercontainer {
+    min-width: 100px;
+    height: 120px;
   }
+  .leaderimg {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
 
+/************end new board style*********************************/
+@media only screen and (max-width: 600px) {
+  .board-text {
+    font-size: 2.25rem;
+    padding-top: 45vh;
+  }
   h2 {
     margin-left: auto;
     margin-right: auto;
@@ -300,3 +354,4 @@ h2 {
     height: 100px;
   }
 }
+
