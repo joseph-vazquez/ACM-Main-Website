@@ -1,60 +1,39 @@
-import React from 'react'
-import "./board.css";
-import 'bootstrap/dist/css/bootstrap.css'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.css";
+import logo from "./img/acm_logo.png";
 
-class BoardLeaders extends React.Component {
-    render() {
-        return (
-            <div className="col-leaders leader-background">
-                <img className="image-cropper profile-pic " src={this.props.photo} alt={this.props.firstName + " " + this.props.year}></img>
-                <div className="officer-info">
-                    <h2>{this.props.firstName}<br />{this.props.lastName}</h2>{this.props.position}
-                </div>
-                <div class = "buttons">
-                    <div class = "linkin">
-                      {this.props.linkedin && (
-						<a href={this.props.linkedin}>
-						    <FontAwesomeIcon
-                                className="iconBrandNav"
-                                size="2x"
-                                icon={faLinkedin}
-                            ></FontAwesomeIcon>
-						</a>
-					   )}
-                    </div>
-                    <div class = "email">
-                        {this.props.email && (
-						  <a href={this.props.email}>
-						    <FontAwesomeIcon
-                                className="iconBrandNav"
-                                size="2x"
-                                icon={faEnvelope}
-                            ></FontAwesomeIcon>
-						  </a>
-					    )}
-                    </div>
-                    <div class = "git">
-                        {this.props.github && (
-						  <a href={this.props.github}>
-						    <FontAwesomeIcon
-                                className="iconBrandNav"
-                                size="2x"
-                                icon={faGithub}
-                            ></FontAwesomeIcon>
-						  </a>
-					    )}
-                    </div>
-                </div>
-            </div>
-        )
-    }
-}
+const BoardLeaders = (props) => {
+  if (props.leader == null) {
+    return <div></div>;
+  } else {
+    return (
+      <div class="leadercontainer card">
+        <div class="d-flex flex-row">
+          {props.leader.img && (
+            <img
+              class="leaderimg rounded-circle p-3 card-img"
+              src={props.leader.img}
+            />
+          )}
+          {!props.leader.img && (
+            <img
+              class="leaderimg rounded-circle p-3 card-img"
+              src={logo}
+            />
+          )}
 
+          <div class="card-body leadercardbody">
+            <h5 class="leadercard-title leadercardtitle">
+              {props.leader.first} {props.leader.last}
+            </h5>
+            <h6 class="role card-subtitle mb-2 text-muted">
+              {props.leader.position}
+            </h6>
+          </div>
+        </div>
+      </div>
+    );
+  }
+};
 
 export default BoardLeaders;
