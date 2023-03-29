@@ -33,15 +33,12 @@ class Board extends React.Component {
   render() {
     return (
       <div>
-        <div>
-          <div className="board-text">
-            <p>
-              The team that makes ACM special at CSULA...
-              <br />
-              Meet our Leaders!
-            </p>
+        <div className="board-header-container">
+          <div id="board-header-title">
+            The team that makes ACM special at CSULA...
+            <br></br>
+            Meet our leaders!
           </div>
-          <div className="board-card"></div>
         </div>
         <div className="leader-of-the-month ">
           <h2 className="leader-header">LEADERS OF THE MONTH</h2>
@@ -63,8 +60,6 @@ class Board extends React.Component {
           </div>
           <h2 className="leader-info">Rana Ashour and John Hernandez</h2>
           <h2 className="leader-info">(February 2023)</h2>
-
-          
         </div>
         {this.state.currentBoard && (
           <div className="boardcontainer container w-100">
@@ -105,14 +100,18 @@ class Board extends React.Component {
             <div class="card-deck justify-content-center align-items-center mb-5">
               {this.state.currentBoard.leaders.officers &&
                 this.state.currentBoard.leaders.officers.map((group) =>
-                  group.members.map((member) => <BoardLeaders leader={member} />)
+                  group.members.map((member) => (
+                    <BoardLeaders leader={member} />
+                  ))
                 )}
             </div>
             <h2 class="groupheader">Committee</h2>
             <div class="card-deck justify-content-center align-items-center mb-5">
               {this.state.currentBoard.leaders.committee &&
                 this.state.currentBoard.leaders.committee.map((group) =>
-                  group.members.map((member) => <BoardLeaders leader={member} />)
+                  group.members.map((member) => (
+                    <BoardLeaders leader={member} />
+                  ))
                 )}
             </div>
             <h2 class="groupheader">Advisors</h2>
