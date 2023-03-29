@@ -4,6 +4,7 @@
     top: 0;
 
     width: 100vw;
+    padding-bottom: 40px;
     border-radius: 0 !important;
     letter-spacing: 2px;
     border-bottom: 3px solid rgb(0, 153, 255, 0.4);
@@ -15,6 +16,31 @@
     -webkit-transition: all 0.3s ease-in-out 0s;
     text-align: left;
     vertical-align: center;
+}
+
+.hover-announcements {
+    position: fixed;
+    width: auto;
+    color: white;
+    font-size: 22px;
+    white-space: nowrap;
+    margin-left: 100%;
+    margin-top: 70px;
+    animation: floatText 30s linear infinite;
+    z-index: 101;
+}
+
+.hover-announcements:hover {
+    animation-play-state: paused;
+}
+
+@keyframes floatText {
+    0% {
+        transform: translate(0, 0);
+      }
+    100% {
+        transform: translate(-160%, 0);
+    }
 }
 
 .brandlogos{
@@ -127,5 +153,17 @@
     }
     .membership-btn {
         margin-left: -15px;
+    }
+    /*will be resolved in another patch*/
+    .hover-announcements {
+        display: none;
+    }
+    @keyframes floatText {
+        0% {
+            transform: translate(0, 0);
+          }
+        100% {
+            transform: translate(-135%, 0);
+        }
     }
 }

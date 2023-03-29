@@ -8,27 +8,27 @@ class HeaderCarousel extends React.Component {
   render() {
     return (
       <div id="introduction" class="d-flex align-items-center">
-        <div id="content" class="position-relative">
-          <img id="logoImage" src={logo} alt="logo" />
-          <span id="codeText">
-            .creates('
-            <Typed
-              className="typed"
-              strings={[
-                "creative thinkers",
-                "future leaders",
-                "real-life experience",
-                "problem solvers",
-                "hard workers",
-              ]}
-              typeSpeed={100}
-              backDelay={60}
-              loop
-            />
-            ');
-          </span>
+          <div id="content" class="position-relative">
+            <img id="logoImage" src={logo} alt="logo" />
+            <span id="codeText">
+              .creates('
+              <Typed
+                className="typed"
+                strings={[
+                  "ASI's secret service",
+                  "the dream web team...",
+                  "Daniel's drone strikes",
+                  "Diane's Advanced team",
+                  "Ashley as ASI pres",
+                  "Keyvan as Google CEO",
+                ]}
+                typeSpeed={90}
+                backDelay={60}
+                loop />
+              ');
+            </span>
+          </div>
         </div>
-      </div>
     );
   }
 }

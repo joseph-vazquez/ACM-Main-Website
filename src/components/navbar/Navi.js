@@ -67,15 +67,14 @@ function ElectionResults() {
 class Navi extends React.Component {
   render() {
     return (
-      <Navbar collapseOnSelect fixed="top" id="navb" expand="lg" variant="dark">
+      <><Navbar collapseOnSelect fixed="top" id="navb" expand="lg" variant="dark">
         <Navbar.Brand id="homepage" href="/">
           <img
             src={logo}
             width="90"
             height="50"
             className="d-inline-block align-top"
-            alt="ACM logo"
-          />
+            alt="ACM logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -151,8 +150,8 @@ class Navi extends React.Component {
             </Navbar.Brand>
           </Nav>
           {/* <div class = "election">
-            <ElectionResults />
-          </div> */}
+      <ElectionResults />
+    </div> */}
           <div class="membership-btn">
             <Nav.Link href="/membership">
               <Button variant="light">Membership</Button>
@@ -161,6 +160,14 @@ class Navi extends React.Component {
           {/* <Nav.Link href="https://calstatelaacm-portal.web.app/#/"><Button variant="light">ACM Portal</Button></Nav.Link> */}
         </Navbar.Collapse>
       </Navbar>
+      <div class="hover-announcements">
+        From all of us here at ACM, happy April Fools Day!!&emsp;Just a reminder to get your tickets for our ACM Movie Night, 
+        The Super Mario Bros Movie on April 7th at Regal Edwards Alhambra Renaissance! Contact any ACM Leader for more details!!
+      </div>
+      <div class="mobile-announcements">
+        From all of us here at ACM, happy April Fools Day!!&emsp;Just a reminder to get your tickets for our ACM Movie Night, 
+        The Super Mario Bros Movie on April 7th at Regal Edwards Alhambra Renaissance! Contact any ACM Leader for more details!!
+      </div></>
     );
   }
 }
