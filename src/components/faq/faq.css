@@ -58,36 +58,22 @@
   color: white;
 }
 
-.header {
+.faq-header-container {
   height: 80vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
-    url("./images/header-background-image.jpg");
-  background-size: cover !important;
-  background-attachment: fixed !important;
-  background-position: center;
-  align-self: center;
-  filter: blur(1px);
-  font-size: 4.4rem;
   color: white;
-  opacity: 0.6;
   font-weight: bold;
-  grid-row: 1/2;
-  grid-column: 2/3;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 153, 255, 0.4)),
+    url("./images/header-background-image.jpg") center top;
+  background-size: cover !important;
 }
 
-.header-text {
-  height: 30vh;
-  width: 100%;
+#faq-header-title {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   font-size: 5rem;
-  color: white;
-  font-weight: bold;
-  line-height: 1.2;
-  text-align: left;
-  padding-top: 25vh;
-  grid-template-rows: 1fr 1.4fr;
-  padding-left: 3rem;
+  top: 25%;
+  left: 10%;
 }
 
 .faq-block {
@@ -109,7 +95,7 @@
 .contact-us-card {
   width: auto;
   height: auto;
-  /*padding: 5px 150px 5px 150px; */
+
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 6%;
@@ -120,13 +106,7 @@
 
 .faq-question {
   margin: 1em;
-  /* padding: 3em; */
 }
-/* .contact-us-block {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-color: black;
-} */
 
 .txtb:focus {
   background-color: #026e9f;
@@ -168,13 +148,21 @@
 }
 
 @media screen and (max-width: 800px) {
-  .header {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
-      url("./images/header-background-portrait-image.png") center;
+  .faq-header-container {
+    height: 80vh;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 153, 255, 0.4)),
+      url("./images/header-background-portrait-image.png") center top;
+    background-size: cover !important;
   }
 
-  .header-text {
+  #faq-header-title {
+    position: absolute;
+    z-index: 1;
     font-size: 3.5rem;
-    padding-left: 0.75em;
+    top: 30%;
+    left: 10%;
   }
 }

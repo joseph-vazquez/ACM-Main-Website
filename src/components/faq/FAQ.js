@@ -45,11 +45,9 @@ class FAQ extends React.Component {
     return (
       <div className="contact-us-page">
         <div className="text-white">
-          <div>
-            <div className="header-text">
-              <p>Have a question?</p>
-            </div>
-            <div className="header"></div>
+          <div className="faq-header-container">
+            <div id="faq-header-title">Have a question?</div>
+            <div id="blur-effect"></div>
           </div>
           <div className="faq-block mx-auto m-4 ">
             <h1 className="text-center mb-4 pt-4">FAQ</h1>
@@ -155,10 +153,10 @@ class FAQ extends React.Component {
               </Card>
             </Accordion>
             <div class="text-center mb-4 pt-4">
-            <Nav.Link href="/contactus">
-              <Button variant="primary">Contact Us</Button>
-            </Nav.Link>
-          </div>
+              <Nav.Link href="/contactus">
+                <Button variant="primary">Contact Us</Button>
+              </Nav.Link>
+            </div>
           </div>
         </div>
       </div>

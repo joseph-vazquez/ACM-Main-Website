@@ -1,34 +1,18 @@
-.project-title-card {
-  /* When the height is less than 70vh, the beginner and advanced tabs are not be clickable */
+.project-header-container {
   height: 80vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
-    url("./fall2022/BeginnerProjectSession.jpg") center;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 153, 255, 0.4)),
+    url("./fall2022/BeginnerProjectSession.jpg") center center;
   background-size: cover !important;
-  background-attachment: fixed !important;
-  background-position: center;
-  align-self: center;
-  filter: blur(1px);
-  font-size: 4.4rem;
-  color: white;
-  font-weight: bold;
-  grid-row: 1/2;
-  grid-column: 2/3;
 }
-
-.project-title-text {
-  height: 30vh;
-  width: 100%;
+#project-header-title {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   font-size: 3.5rem;
-  color: white;
-  font-weight: bold;
-  line-height: 0.9;
-  text-align: left;
-  padding-top: 30vh;
-  /* display: grid; */
-  grid-template-rows: 1fr 1.4fr;
-  padding-left: 3rem;
+  top: 30%;
+  left: 10%;
 }
 
 .projectheader {
@@ -58,8 +42,8 @@
   padding-top: 30px;
 }
 
-#proj-contents{
-  width:100%;
+#proj-contents {
+  width: 100%;
 }
 .project-nav-link {
   color: white;
@@ -131,13 +115,11 @@
   padding-top: 10px;
 }
 
-.date-disclaimer{
+.date-disclaimer {
   color: rgb(0, 217, 255);
 }
 
 .disclaimer_info {
-  /* padding-left: 20px;
-    padding-right: 20px; */
   padding: 20px;
 }
 
@@ -165,11 +147,6 @@ iframe[src*="youtube"] {
 }
 .upper-margin {
   margin-top: 1.6rem;
-}
-@media only screen and(max-width) {
-  .project_info {
-    padding: 20px;
-  }
 }
 
 .disclaimer-spacing {
@@ -256,15 +233,15 @@ iframe[src*="youtube"] {
 
 /***************** general CARD styles **********************/
 
-
-.card-title, .card-text{
+.card-title,
+.card-text {
   color: black !important;
 }
 
-.card-title{
+.card-title {
   border: 3px solid black;
   border-radius: 4em;
-  width:50%;
+  width: 50%;
   margin: auto;
   padding: 1em 0 1em;
   background-color: rgb(204, 235, 253);
@@ -274,24 +251,22 @@ iframe[src*="youtube"] {
   margin: auto !important;
   margin-top: 1em !important;
 }
-.archivedropdown{
+.archivedropdown {
   padding-right: 0px !important;
   border: 1px solid black;
   border-radius: 5px;
 }
 
-.archivedropdown .dropdown-menu{
+.archivedropdown .dropdown-menu {
   background-color: #1b1b35;
   border: 1px solid #7d7dac;
 }
 
-.project-tab-label{
-  
+.project-tab-label {
   justify-content: center;
 }
 
 /****************** end of CARD styles ****************/
-
 
 /**************general PROJECTS CAROUSEL styles******************/
 .leadercarousel {
@@ -318,39 +293,38 @@ iframe[src*="youtube"] {
   bottom: -18px;
 }
 
-@media only screen and (max-width: 768px){
-  .leadercarousel{
-      max-height:10em;
-      max-width:10em;
-      margin: auto;
-      background-color: rgb(0, 0, 0);
+@media only screen and (max-width: 768px) {
+  .leadercarousel {
+    max-height: 10em;
+    max-width: 10em;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
   }
-  .leadercarousel .carousel-inner, .leadercarousel img{
-      max-height:10em;
-      margin: auto;
+  .leadercarousel .carousel-inner,
+  .leadercarousel img {
+    max-height: 10em;
+    margin: auto;
   }
-  .leadercarousel .carousel-caption{
-      position: absolute;
-      top: 55%;
-      
+  .leadercarousel .carousel-caption {
+    position: absolute;
+    top: 55%;
   }
 }
 /****************** end of carousel styles ****************/
 
-
 @media only screen and (max-width: 600px) {
-  .project-title-card {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
-      url("./header-potrait-background-image.png") center;
+  .project-header-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 153, 255, 0.4)),
+      url("./header-potrait-background-image.png") center center;
+  }
+  #project-header-title {
+    position: absolute;
+    z-index: 1;
+    font-size: 2rem;
+    top: 30%;
+    left: 10%;
   }
 
-  .project-title-text {
-    font-size: 2.75rem;
-
-    padding-top: 30vh;
-
-    padding-left: 1em;
-  }
   .project-card {
     margin-left: -25px;
     text-align: left;

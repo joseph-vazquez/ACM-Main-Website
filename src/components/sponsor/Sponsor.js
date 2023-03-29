@@ -20,11 +20,9 @@ class Sponsors extends React.Component {
 
     return (
       <div>
-        <div>
-          <div className="sponsors-text">
-            <p>Sponsors</p>
-          </div>
-          <div className="sponsors-card"></div>
+        <div className="sponsor-header-container">
+          <div id="sponsor-header-title">Sponsor</div>
+          <div id="blur-effect"></div>
         </div>
         {/* <div className="sponsors-border"></div> */}
 

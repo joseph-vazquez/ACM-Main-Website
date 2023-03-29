@@ -31,11 +31,12 @@ class ContactUs extends React.Component {
     return (
       <div className="contact-us-page">
         <div className="text-white">
-          <div>
-            <div className="header-text">
-              <p>Ask us if you have any <br />questions or comments!</p>
+          <div className="contact-header-container">
+            <div id="contact-header-title">
+              Have a question?
+              <br></br>
+              Send us an email
             </div>
-            <div className="contact-header"></div>
           </div>
         </div>
 
