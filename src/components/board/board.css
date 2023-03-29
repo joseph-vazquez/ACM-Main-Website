@@ -1,35 +1,19 @@
-.board-card {
+.board-header-container {
   height: 80vh;
-  width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
-    url("../aboutus/images/board-background.jpg") center;
-  background-size: cover !important;
-  background-attachment: fixed !important;
-  background-position: center !important;
-  margin-top: auto;
-  filter: blur(1px);
-  font-size: 4.4rem;
   color: white;
-  opacity: 0.6;
   font-weight: bold;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 153, 255, 0.4)),
+    url("../aboutus/images/board-background.jpg") center top;
+  background-size: cover !important;
 }
 
-.board-text {
-  height: 30vh;
-  width: 100%;
+#board-header-title {
   position: absolute;
-  z-index: 2;
-  font-family: Roboto;
+  z-index: 1;
   font-size: 3.5rem;
-  color: white;
-  font-weight: bold;
-  line-height: 1.2;
-  text-align: left;
-  padding-top: 32vh;
-
-  /* display: grid; */
-  grid-template-rows: 1fr 1.4fr;
-  padding-left: 3rem;
+  top: 40%;
+  left: 10%;
 }
 
 .body {
@@ -55,8 +39,6 @@
   width: 100vw;
   padding: 0px !important;
 }
-
-
 
 .small-header {
   text-transform: uppercase;
@@ -269,7 +251,7 @@ h2 {
   border: 2px solid rgb(0, 232, 248);
   background-color: #0256a5 !important;
 }
-.role{
+.role {
   color: #c5c5c5 !important;
 }
 .leaderimg {
@@ -292,9 +274,12 @@ h2 {
 
 /************end new board style*********************************/
 @media only screen and (max-width: 600px) {
-  .board-text {
-    font-size: 2.25rem;
-    padding-top: 45vh;
+  #board-header-title {
+    position: absolute;
+    z-index: 1;
+    font-size: 2.5rem;
+    top: 30%;
+    left: 10%;
   }
   h2 {
     margin-left: auto;
@@ -354,4 +339,3 @@ h2 {
     height: 100px;
   }
 }
-
