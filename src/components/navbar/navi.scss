@@ -153,10 +153,23 @@
     }
     .membership-btn {
         margin-left: -15px;
+        margin-bottom: -30px;
     }
-    /*will be resolved in another patch*/
+    
     .hover-announcements {
-        display: none;
+        position: fixed;
+        width: auto;
+        color: white;
+        font-size: 22px;
+        white-space: nowrap;
+        margin-left: 100%;
+        margin-top: 70px;
+        animation: floatText 30s linear infinite;
+        z-index: 101;
+    }
+
+    .mr-auto {
+        margin-top: 40px;
     }
     @keyframes floatText {
         0% {
