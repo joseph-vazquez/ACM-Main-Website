@@ -15,12 +15,12 @@ class HeaderCarousel extends React.Component {
               <Typed
                 className="typed"
                 strings={[
-                  "ASI's secret service",
-                  "the dream web team...",
-                  "Daniel's drone strikes",
-                  "Diane's Advanced team",
-                  "Ashley as ASI pres",
-                  "Keyvan as Google CEO",
+                  "creative thinkers",
+                  "future leaders",
+                  "real-life experience",
+                  "problem solvers",
+                  "hard workers",
+                  "future leaders",
                 ]}
                 typeSpeed={90}
                 backDelay={60}
