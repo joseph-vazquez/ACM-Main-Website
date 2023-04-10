@@ -65,7 +65,7 @@ class App extends React.Component {
           <Navi />
           <Route exact path="/" component={Home} />
           {/*<Route exact path='/' render={() => <Body state={this.state}/>}/>*/}
-          <Route path="/sponsor" component={Sponsor} />
+          {/*<Route path="/sponsor" component={Sponsor} />*/}
           <Route path="/aboutus" component={AboutUs} />
           <Route path="/calendar" component={Calendar} />
           <Route path="/membership" component={Membership} />
