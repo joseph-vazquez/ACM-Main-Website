@@ -161,12 +161,9 @@ class Navi extends React.Component {
         </Navbar.Collapse>
       </Navbar>
       <div class="hover-announcements">
-        From all of us here at ACM, happy April Fools Day!!&emsp;Just a reminder to get your tickets for our ACM Movie Night, 
-        The Super Mario Bros Movie on April 7th at Regal Edwards Alhambra Renaissance! Contact any ACM Leader for more details!!
-      </div>
-      <div class="mobile-announcements">
-        From all of us here at ACM, happy April Fools Day!!&emsp;Just a reminder to get your tickets for our ACM Movie Night, 
-        The Super Mario Bros Movie on April 7th at Regal Edwards Alhambra Renaissance! Contact any ACM Leader for more details!!
+        Wanting to relax between classes? Do you want to brag about your gaming skills? Come join us at our Game Night, 
+        with collaboration from Golden Eagle Gaming, on April 13th from 6pm-8pm, in the following rooms at the University Student Union: 
+        (USU Montebello, USU Pasadena, and USU San Gabriel). Prizes will be gift cards during the event!
       </div></>
     );
   }

@@ -3,16 +3,16 @@
   height: 100vh;
   background: 
   linear-gradient(
-  rgba(0, 0, 0, 0.25), 
-  rgba(0, 0, 0, 0.25)),
-  url("ACMBackgroundFools.png");
+  rgba(0, 0, 0, 0.55), 
+  rgba(0, 0, 0, 0.55)),
+  url("sideshow1.png");
   background-size: cover;
   background-position: 0 -80px;
   background-attachment: fixed;
 }
 
 #content{
-  margin: 0 13em 0;
+  margin: 6em 12em 0;
 }
 
 #codeText{
@@ -26,7 +26,6 @@
     display: block;
     min-height: 60vh;
     background-attachment: local;
-    background-position: 0;
   }
   #content{
     margin: 3em 6em 0;
