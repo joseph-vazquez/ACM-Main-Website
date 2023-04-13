@@ -16,7 +16,7 @@ class HeaderCarousel extends React.Component {
                 className="typed"
                 strings={[
                   "creative thinkers",
-                  "future leaders",
+                  "a welcoming community",
                   "real-life experience",
                   "problem solvers",
                   "hard workers",

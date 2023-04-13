@@ -32,7 +32,6 @@ class ImpAnnouncements extends Component {
     ];
 
     let links = [
-      "https://forms.gle/26x5NMDnrFE3jhn89",
       "https://forms.gle/hAjvNSbS47ghMxuE8",
     ];
 
