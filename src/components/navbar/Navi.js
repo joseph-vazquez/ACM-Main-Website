@@ -163,9 +163,8 @@ class Navi extends React.Component {
         </Navbar.Collapse>
       </Navbar>
       <div class="hover-announcements">
-        Wanting to relax between classes? Do you want to brag about your gaming skills? Come join us at our Game Night, 
-        with collaboration from Golden Eagle Gaming, on April 13th from 6pm-8pm, in the following rooms at the University Student Union: 
-        (USU Montebello, USU Pasadena, and USU San Gabriel). Prizes will be gift cards during the event!
+        Want to learn how to manage your finance skills, including how to budget and invest properly? Workshop #5 of the Pro-Dev series will be on April 20th, from 3-4:20pm on Zoom! | As
+        the semester comes to an end, most doors will close, but a new door will open to great beginnings. More info about our last General Meeting soon!
       </div></>
     );
   }

@@ -58,6 +58,7 @@ class ImpAnnouncements extends Component {
           <br></br>
 
           <Row id="event-container">
+            {/*
             <Col md={6} id="upcoming-flyer" class="text-center">
               <div className="event-section">
                 <h1 className="upcoming-title">Upcoming events</h1>
@@ -66,19 +67,6 @@ class ImpAnnouncements extends Component {
                   <br />
                   calendar for more details.
                 </p>
-                {/* <Carousel infiniteLoop className="flyer-container">
-                  {upcomingPosters.map((value, index) => {
-                    return (
-                      <div>
-                        <img
-                          className="carousel-event-image"
-                          src={require("" + value)}
-                          alt="event"
-                        />
-                      </div>
-                    );
-                  })}
-                </Carousel> */}
                 <Carousel infiniteLoop className="flyer-container">
                   {this.state.upcomingEvent &&
                     this.state.upcomingEvent.map((upComingEvents) => {
@@ -94,7 +82,7 @@ class ImpAnnouncements extends Component {
                     })}
                 </Carousel>
               </div>
-            </Col>
+            </Col>*/}
             <Col md={6} id="featured-flyer" class="text-center">
               <div className="event-section">
                 <h1 className="featured-title">Featured Events</h1>
