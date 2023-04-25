@@ -46,20 +46,13 @@ class Board extends React.Component {
             <img
               className="board-leader-winner board-leader-profile"
               src={
-                "https://firebasestorage.googleapis.com/v0/b/acm-calstatela.appspot.com/o/Leaders%202022-2023%2FBrian.jpg?alt=media&token=70083aed-d992-4ba7-9eb8-8e93dc4f197b"
-              }
-              alt={"Leader of the Month"}
-            ></img>
-            <img
-              className="board-leader-winner board-leader-profile"
-              src={
-                "https://firebasestorage.googleapis.com/v0/b/acm-calstatela.appspot.com/o/Leaders%202022-2023%2FJonathan.jpg?alt=media&token=c96a780e-33e6-402a-bcde-4ce962ca7da1"
+                "https://firebasestorage.googleapis.com/v0/b/acm-calstatela.appspot.com/o/Leaders%202022-2023%2FDiane.jpg?alt=media&token=07fcfbc8-5ee4-4e07-b5d7-1cd535257a3a"
               }
               alt={"Leader of the Month"}
             ></img>
           </div>
-          <h2 className="leader-info">Brian Pham and Jonathan Dang</h2>
-          <h2 className="leader-info">(March 2023)</h2>
+          <h2 className="leader-info">Diane Tabilas</h2>
+          <h2 className="leader-info">(April 2023)</h2>
         </div>
         {this.state.currentBoard && (
           <div className="boardcontainer container w-100">
