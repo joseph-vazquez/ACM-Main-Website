@@ -66,19 +66,6 @@ class ImpAnnouncements extends Component {
                   <br />
                   calendar for more details.
                 </p>
-                {/* <Carousel infiniteLoop className="flyer-container">
-                  {upcomingPosters.map((value, index) => {
-                    return (
-                      <div>
-                        <img
-                          className="carousel-event-image"
-                          src={require("" + value)}
-                          alt="event"
-                        />
-                      </div>
-                    );
-                  })}
-                </Carousel> */}
                 <Carousel infiniteLoop className="flyer-container">
                   {this.state.upcomingEvent &&
                     this.state.upcomingEvent.map((upComingEvents) => {
