@@ -91,7 +91,6 @@ class ImpAnnouncements extends Component {
                 <p className="event-description">
                   Stay tuned for Fall 2023
                 </p>
-                
                 {/*
                 <Carousel infiniteLoop className="flyer-container">
                   {eventPosters.map((value, index) => {
@@ -113,6 +112,7 @@ class ImpAnnouncements extends Component {
                   })}
                 </Carousel>
                 */}
+                
               </div>
             </Col>
           </Row>
