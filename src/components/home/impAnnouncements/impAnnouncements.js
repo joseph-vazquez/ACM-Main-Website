@@ -86,9 +86,9 @@ class ImpAnnouncements extends Component {
               <div className="event-section">
                 <h1 className="featured-title">Featured Events</h1>
                 <p className="event-description">
-                  For Spring 2023, ACM will be offering <br />
-                  scholarships and professional workshops!
+                  Stay tuned for Fall 2023
                 </p>
+                {/*
                 <Carousel infiniteLoop className="flyer-container">
                   {eventPosters.map((value, index) => {
                     return (
@@ -108,6 +108,8 @@ class ImpAnnouncements extends Component {
                     );
                   })}
                 </Carousel>
+                */}
+                
               </div>
             </Col>
           </Row>
