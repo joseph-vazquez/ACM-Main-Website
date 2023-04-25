@@ -163,8 +163,8 @@ class Navi extends React.Component {
         </Navbar.Collapse>
       </Navbar>
       <div class="hover-announcements">
-        Want to learn how to manage your finance skills, including how to budget and invest properly? Workshop #5 of the Pro-Dev series will be on April 20th, from 3-4:20pm on Zoom! | As
-        the semester comes to an end, most doors will close, but a new door will open to great beginnings. More info about our last General Meeting soon!
+        Our last General Meeting will be on May 2nd, from 3:00 - 4:20pm, in Fine Arts 347. Come see what we have done
+        in ACM this semester, gift cards will be raffled out to all attendees that attend!
       </div></>
     );
   }

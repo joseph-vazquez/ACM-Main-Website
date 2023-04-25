@@ -58,7 +58,6 @@ class ImpAnnouncements extends Component {
           <br></br>
 
           <Row id="event-container">
-            {/*
             <Col md={6} id="upcoming-flyer" class="text-center">
               <div className="event-section">
                 <h1 className="upcoming-title">Upcoming events</h1>
@@ -82,7 +81,7 @@ class ImpAnnouncements extends Component {
                     })}
                 </Carousel>
               </div>
-            </Col>*/}
+            </Col>
             <Col md={6} id="featured-flyer" class="text-center">
               <div className="event-section">
                 <h1 className="featured-title">Featured Events</h1>
