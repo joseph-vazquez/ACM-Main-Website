@@ -177,7 +177,7 @@ class Navi extends React.Component {
           </Navbar.Collapse>
         </Navbar>
         <div class="hover-announcements">
-          Welcome to Fall 2023! Meet up with ACM leaders and build your network
+          Welcome to Fall 2023! Don't miss on this opportunity! Meet up with ACM leaders and build your network
           at ACM's First General Meeting on Tuesday, August 29th at
           (room_number).
         </div>
