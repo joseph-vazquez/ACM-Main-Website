@@ -71,7 +71,7 @@ class AboutUs extends React.Component {
                     our mentorship program.
                   </li>
                 </AnimationOnScroll>
-
+          
                 <AnimationOnScroll
                   animateIn="animate__fadeIn"
                   delay="1"
