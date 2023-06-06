@@ -35,7 +35,7 @@ class AboutUs extends Component {
               <div className="link-btn">
                 <AnimationOnScroll animateIn="animate__fadeIn" delay="1" animateOnce="true">
                   <a className="label px-5" href="/aboutus">
-                    Learn more
+                    Learn more!
                   </a>
                 </AnimationOnScroll>
               </div>
