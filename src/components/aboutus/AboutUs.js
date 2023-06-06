@@ -19,7 +19,7 @@ class AboutUs extends React.Component {
         <div className="header-container">
           <div className="about-us-card"></div>
           <span id="header-text">About us</span>
-        </div> ff */}
+        </div> */}
 
         <div className="aboutus-header-container">
           <div id="aboutus-header-title">About us</div>
