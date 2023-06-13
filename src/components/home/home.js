@@ -9,6 +9,7 @@ import Activities from './activities/activities';
 // import Mentorship from './mentorship/mentorship';
 // import News from './news/news';
 import Membership from './membership/membership';
+import CurrentEvents from "./currentevents/currentevents";
 
 class Home extends Component {
     render() {
@@ -16,6 +17,7 @@ class Home extends Component {
             <section className="homeWrapper">
                 <Carousel/>
                 <ImpAnnouncement/>
+                <CurrentEvents/>
                 <AboutUs/>
                 <Membership/>
                 <Activities/>
