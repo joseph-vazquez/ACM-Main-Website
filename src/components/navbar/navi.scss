@@ -4,12 +4,12 @@
   top: 0;
 
   width: 100vw;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
   border-radius: 0 !important;
   letter-spacing: 2px;
-  border-bottom: 3px solid rgb(0, 153, 255, 0.4);
-  border-bottom: 3px solid rgb(0, 153, 255, 0.4);
-  z-index: 100;
+  // border-bottom: 3px solid rgb(0, 153, 255, 0.4);
+  // border-bottom: 3px solid rgb(0, 153, 255, 0.4);
+  z-index: 102;
   transition: all 0.3s ease-in-out 0s;
   font-size: 2rem;
   -moz-transition: all 0.3s ease-in-out 0s;
@@ -31,6 +31,16 @@
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
+}
+
+.hover-announcements-background {
+  background-color: #1c1c1e;
+  position: fixed;
+  z-index: 100;
+  border-bottom: 3px solid rgb(0, 153, 255, 0.4);
+  width: 100vw;
+  height: 22px;
+  padding-top: 110px;
 }
 
 // .hover-announcements:hover {
@@ -103,6 +113,7 @@
 }
 
 .nav-dropdown-text {
+
   color: black;
 }
 
