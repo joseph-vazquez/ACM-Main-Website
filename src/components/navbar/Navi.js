@@ -176,6 +176,7 @@ class Navi extends React.Component {
             {/* <Nav.Link href="https://calstatelaacm-portal.web.app/#/"><Button variant="light">ACM Portal</Button></Nav.Link> */}
           </Navbar.Collapse>
         </Navbar>
+        <div class="hover-announcements-background"></div>
         <div class="hover-announcements">
           Welcome to Fall 2023! Don't miss on this opportunity! Meet up with ACM leaders and build your network
           at ACM's First General Meeting on Tuesday, August 29th at
