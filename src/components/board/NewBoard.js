@@ -56,7 +56,7 @@ const NewBoard = () => {
             </Col>
             <Col md={9}>
               {currentBoard && (
-                <Tab.Content className="mx-auto">
+                <Tab.Content className="m-0 w-100">
                   <Tab.Pane eventKey="board">
                     <h2 class="groupheader text-light">Board</h2>
                     <div class="card-deck justify-content-center align-items-center mb-5 text-light">
