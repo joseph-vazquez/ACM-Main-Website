@@ -223,6 +223,8 @@ h2 {
   margin-top: 5px;
   margin-right: 10px;
 }
+
+
 /************New board style*************************************/
 .boardcontainer {
   margin: auto !important;
@@ -243,9 +245,9 @@ h2 {
 }
 
 .leadercontainer {
-  min-width: 390px;
-  max-width: 390px;
-  height: 170px;
+  min-width: 250px;
+  max-width: 250px;
+  height: 300px;
   float: none;
   margin: 1.2em auto 1.2em;
   border: 2px solid rgb(0, 232, 248);
@@ -261,10 +263,17 @@ h2 {
   margin: 0px !important;
   filter: blur(0.3px);
 }
+
+.bottomheader{
+  border: 1px solid rgb(0, 232, 248);
+  width: 25em;
+  margin-bottom: 2em;
+}
+
 @media only screen and (max-width: 430px) {
   .leadercontainer {
     min-width: 100px;
-    height: 120px;
+    height: 200px;
   }
   .leaderimg {
     max-width: 100px;
@@ -273,6 +282,14 @@ h2 {
 }
 
 /************end new board style*********************************/
+
+/************Board tab styles*************************************/
+.board-tab-container{
+  background-color: #09477a;
+  padding: 1em;
+}
+
+
 @media only screen and (max-width: 600px) {
   #board-header-title {
     position: absolute;
