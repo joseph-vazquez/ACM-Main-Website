@@ -35,27 +35,34 @@ const NewBoard = () => {
           Meet our leaders!
         </div>
       </div>
-      <div class="boardcontainer pt-3">
-        <Tab.Container id="left-tabs-example" defaultActiveKey="board">
-          <Row className="mx-auto">
-            <Col md={3}>
-              <Nav variant="pills" className="board-tab-container flex-column">
-                <Nav.Item className="board-tab">
-                  <Nav.Link eventKey="board">Board</Nav.Link>
-                </Nav.Item>
-                <Nav.Item className="board-tab">
-                  <Nav.Link eventKey="officer">Officers</Nav.Link>
-                </Nav.Item>
-                <Nav.Item className="board-tab">
-                  <Nav.Link eventKey="committee">Committees</Nav.Link>
-                </Nav.Item>
-                <Nav.Item className="board-tab">
-                  <Nav.Link eventKey="advisor">Advisors</Nav.Link>
-                </Nav.Item>
-              </Nav>
-            </Col>
-            <Col md={9}>
-              {currentBoard && (
+      {currentBoard && (
+        <div class="boardcontainer pt-3">
+          <h1 class="mx-auto text-light py-3" align="center">
+            ACM Leaders of {currentBoard.schoolyear}
+          </h1>
+          <div class="bottomheader mx-auto" align="center"></div>
+          <Tab.Container id="left-tabs-example" defaultActiveKey="board">
+            <Row className="mx-auto">
+              <Col md={3}>
+                <Nav
+                  variant="pills"
+                  className="board-tab-container flex-column"
+                >
+                  <Nav.Item className="board-tab">
+                    <Nav.Link eventKey="board">Board</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item className="board-tab">
+                    <Nav.Link eventKey="officer">Officers</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item className="board-tab">
+                    <Nav.Link eventKey="committee">Committees</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item className="board-tab">
+                    <Nav.Link eventKey="advisor">Advisors</Nav.Link>
+                  </Nav.Item>
+                </Nav>
+              </Col>
+              <Col md={9}>
                 <Tab.Content className="m-0 w-100">
                   <Tab.Pane eventKey="board">
                     <h2 class="groupheader text-light">Board</h2>
@@ -101,15 +108,17 @@ const NewBoard = () => {
                     </div>
                   </Tab.Pane>
                   <Tab.Pane eventKey="committee">
-                    <h2 class="groupheader text-light">Committee</h2>
-                    <div class="card-deck justify-content-center align-items-center mb-5 text-light">
-                      {currentBoard.leaders.committee &&
-                        currentBoard.leaders.committee.map((group) =>
-                          group.members.map((member) => (
-                            <BoardLeaders leader={member} />
-                          ))
-                        )}
-                    </div>
+                    {currentBoard.leaders.committee &&
+                      currentBoard.leaders.committee.map((group) => (
+                        <>
+                          <h3 class="text-light" align="center">{group.role_group}</h3>
+                          <div class="card-deck justify-content-center align-items-center mb-5 text-light">
+                            {group.members.map((member) => (
+                              <BoardLeaders leader={member} />
+                            ))}
+                          </div>
+                        </>
+                      ))}
                   </Tab.Pane>
                   <Tab.Pane eventKey="advisor">
                     <h2 class="groupheader text-light">Advisors</h2>
@@ -121,11 +130,11 @@ const NewBoard = () => {
                     </div>
                   </Tab.Pane>
                 </Tab.Content>
-              )}
-            </Col>
-          </Row>
-        </Tab.Container>
-      </div>
+              </Col>
+            </Row>
+          </Tab.Container>
+        </div>
+      )}
     </div>
   );
 };
