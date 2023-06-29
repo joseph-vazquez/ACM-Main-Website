@@ -8,7 +8,7 @@ const BoardLeaders = (props) => {
   } else {
     return (
       <div class="leadercontainer card">
-        <div class="d-flex flex-row">
+        <div align="center">
           {props.leader.img && (
             <img
               class="leaderimg rounded-circle p-3 card-img"

@@ -21,6 +21,7 @@ import Programs from "./components/programs/Programs";
 import FooterCarousel from "./components/footercarousel/FooterCarousel.js";
 import Success from "./components/membership/CheckoutComponents/Success.js";
 import Portal from "./components/portal/Portal.js";
+import NewBoard from "./components/board/NewBoard";
 
 class App extends React.Component {
   constructor(props) {
@@ -74,7 +75,7 @@ class App extends React.Component {
           <Route path="/events" component={Events} />
           <Route path="/projects" component={Projects} />
           <Route path="/professional" component={Professional} />
-          <Route path="/board" component={Board} />
+          <Route path="/board" component={NewBoard} />
           <Route path="/programs" component={Programs} />
           <Route path="/portal" component={Portal} />
           <Route path="/Success" component={SuccessPage} />
