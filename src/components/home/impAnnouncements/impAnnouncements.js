@@ -27,13 +27,9 @@ class ImpAnnouncements extends Component {
   }
 
   render() {
-    let eventPosters = [
-      "./images/spring2023-pro-dev.png",
-    ];
+    let eventPosters = ["./images/spring2023-pro-dev.png"];
 
-    let links = [
-      "https://forms.gle/hAjvNSbS47ghMxuE8",
-    ];
+    let links = ["https://forms.gle/hAjvNSbS47ghMxuE8"];
 
     return (
       <section className="impAnnouncements-tease">
@@ -55,7 +51,61 @@ class ImpAnnouncements extends Component {
               Communications will be done via email, Discord, and social media
             </p>
           </div>
-          
+          <br></br>
+
+          <Row id="event-container">
+            <Col md={6} id="upcoming-flyer" class="text-center">
+              <div className="event-section">
+                <h1 className="upcoming-title">Upcoming events</h1>
+                <p className="event-description">
+                  Don't miss out on these events! See our
+                  <br />
+                  calendar for more details.
+                </p>
+                <Carousel infiniteLoop className="flyer-container">
+                  {this.state.upcomingEvent &&
+                    this.state.upcomingEvent.map((upComingEvents) => {
+                      return (
+                        <div>
+                          <img
+                            className="carousel-event-image"
+                            src={upComingEvents.imgUrl}
+                            alt={upComingEvents.altText}
+                          />
+                        </div>
+                      );
+                    })}
+                </Carousel>
+              </div>
+            </Col>
+            <Col md={6} id="featured-flyer" class="text-center">
+              <div className="event-section">
+                <h1 className="featured-title">Featured Events</h1>
+                <p className="event-description">Stay tuned for Fall 2023</p>
+                {/*
+                <Carousel infiniteLoop className="flyer-container">
+                  {eventPosters.map((value, index) => {
+                    return (
+                      <div>
+                        <img
+                          className="carousel-event-image"
+                          src={require("" + value)}
+                          alt="event"
+                        />
+                        <Button
+                          href={links[index]}
+                          style={{ backgroundColor: "#0A84FF" }}
+                        >
+                          Apply Now!
+                        </Button>
+                      </div>
+                    );
+                  })}
+                </Carousel>
+                */}
+              </div>
+            </Col>
+          </Row>
         </div>
       </section>
     );
