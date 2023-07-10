@@ -4,7 +4,6 @@ import { Card } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css';
 //import Carousel from 'react-bootstrap/Carousel';
 import Regular from './CheckoutComponents/RegularCheckout.js'
-import TestCheckout from './CheckoutComponents/TestCheckout';
 
 class Membership extends React.Component {
 
@@ -75,7 +74,7 @@ class Membership extends React.Component {
 					</div>
 					<div className="member-body">
 						<Card.Body style={{ backgroundColor: "#00000000", scale: "95%" }}>
-							<TestCheckout />
+							<Regular />
 						</Card.Body>
 					</div>
 					<br></br>
