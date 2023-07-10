@@ -27,13 +27,9 @@ class ImpAnnouncements extends Component {
   }
 
   render() {
-    let eventPosters = [
-      "./images/spring2023-pro-dev.png",
-    ];
+    let eventPosters = ["./images/spring2023-pro-dev.png"];
 
-    let links = [
-      "https://forms.gle/hAjvNSbS47ghMxuE8",
-    ];
+    let links = ["https://forms.gle/hAjvNSbS47ghMxuE8"];
 
     return (
       <section className="impAnnouncements-tease">
@@ -50,7 +46,7 @@ class ImpAnnouncements extends Component {
               allowfullscreen
             ></iframe>
           </div>
-          <div className="description border-bottom mt-3">
+          <div className="description mt-3">
             <p>
               Communications will be done via email, Discord, and social media
             </p>
@@ -85,9 +81,7 @@ class ImpAnnouncements extends Component {
             <Col md={6} id="featured-flyer" class="text-center">
               <div className="event-section">
                 <h1 className="featured-title">Featured Events</h1>
-                <p className="event-description">
-                  Stay tuned for Fall 2023
-                </p>
+                <p className="event-description">Stay tuned for Fall 2023</p>
                 {/*
                 <Carousel infiniteLoop className="flyer-container">
                   {eventPosters.map((value, index) => {
@@ -109,7 +103,6 @@ class ImpAnnouncements extends Component {
                   })}
                 </Carousel>
                 */}
-                
               </div>
             </Col>
           </Row>

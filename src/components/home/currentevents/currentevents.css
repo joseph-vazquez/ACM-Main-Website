@@ -1,0 +1,12 @@
+.currentevents{
+    background: linear-gradient(135deg, #5e97ec, #0646a5);
+    color: rgb(255, 255, 255);
+}
+.news-title{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.news-desc{
+    text-align: centers;
+}

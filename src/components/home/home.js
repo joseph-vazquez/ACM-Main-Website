@@ -9,6 +9,7 @@ import Activities from './activities/activities';
 // import Mentorship from './mentorship/mentorship';
 // import News from './news/news';
 import Membership from './membership/membership';
+import CurrentEvents from "./currentevents/currentevents";
 
 class Home extends Component {
     render() {
