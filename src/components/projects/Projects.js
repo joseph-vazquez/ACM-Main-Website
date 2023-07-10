@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./Projects.css";
 import CurrentProjects from "./CurrentProjects.js";
 import PastProjects from "./PastProjects.js";
+import ArchiveProj from "./ArchiveProj.js";
 
 class Projects extends React.Component {
   constructor(props) {
@@ -85,17 +86,16 @@ class Projects extends React.Component {
         {this.state.currentProj && this.state.archiveProj && (
           <Tab.Container defaultActiveKey={this.state.currentProjSem}>
             <Nav className="project-tab-label px-3 mx-auto" variant="pills">
-              <NavDropdown
-                className="archivedropdown btn-primary text-center"
-                title="Archive"
-                menuVariant="dark"
-              >
-                {this.state.archiveProj.map((sem) => (
-                  <NavDropdown.Item eventKey={sem.semester}>
-                    {sem.semester}
-                  </NavDropdown.Item>
-                ))}
-              </NavDropdown>
+              <Nav.Item>
+                <Nav.Link
+                  className="btn-primary text-center"
+                  title="Archive"
+                  menuVariant="dark"
+                  eventKey="archiveproj"
+                >
+                  Archive
+                </Nav.Link>
+              </Nav.Item>
               <Nav.Item>
                 <Nav.Link
                   className="project-nav-link-tab"
@@ -109,11 +109,9 @@ class Projects extends React.Component {
               <Tab.Pane eventKey={this.state.currentProjSem}>
                 <CurrentProjects current={this.state.currentProj} />
               </Tab.Pane>
-              {this.state.archiveProj.map((sem) => (
-                <Tab.Pane eventKey={sem.semester}>
-                  <PastProjects archive={sem} />
-                </Tab.Pane>
-              ))}
+              <Tab.Pane eventKey="archiveproj">
+                <ArchiveProj archive={this.state.archiveProj} />
+              </Tab.Pane>
             </Tab.Content>
           </Tab.Container>
         )}
