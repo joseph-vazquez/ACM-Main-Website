@@ -17,7 +17,6 @@ class Home extends Component {
             <section className="homeWrapper">
                 <Carousel/>
                 <ImpAnnouncement/>
-                <CurrentEvents/>
                 <AboutUs/>
                 <Membership/>
                 <Activities/>
