@@ -34,7 +34,9 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.1",
     "react-typed": "^1.2.0",
-    "sass": "^1.26.10"
+    "sass": "^1.26.10",
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
