@@ -19,7 +19,9 @@ const ProjModal = (props) => {
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <p>(Here we put a short description of what the project was about)</p>
+            <p>
+              (Here we put a short description of what the project was about)
+            </p>
             <h4>Skills learned:</h4>
             <ul>
               {props.data.skills.map((item) => (
@@ -70,28 +72,54 @@ const ArchiveProj = (props) => {
                 <tr>
                   <td>{sem.semester}</td>
                   <td>
+                    {/*
+                    
                     <Github className="mr-3" />
+                    */}
                     <a
                       onClick={() => {
                         selectHandler(sem.level.beginners);
                       }}
                       style={{ cursor: "pointer" }}
+                      class="mx-2"
                     >
                       {sem.level.beginners.title}
                     </a>
-                    <Button variant="success">Play demo</Button>
+                    {sem.level.beginners.demoURL && (
+                      <Button
+                        href={sem.level.beginners.demoURL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        variant="success"
+                      >
+                        Play demo
+                      </Button>
+                    )}
                   </td>
                   <td>
+                    {/*
+                    
                     <Github className="mr-3" />
+                    */}
                     <a
                       onClick={() => {
                         selectHandler(sem.level.advanced);
                       }}
                       style={{ cursor: "pointer" }}
+                      class="mx-2"
                     >
                       {sem.level.advanced.title}
                     </a>
-                    <Button variant="success">Play demo</Button>
+                    {sem.level.advanced.demoURL && (
+                      <Button
+                        href={sem.level.advanced.demoURL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        variant="success"
+                      >
+                        Play demo
+                      </Button>
+                    )}
                   </td>
                 </tr>
               ))}
