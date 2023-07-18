@@ -34,7 +34,7 @@ class ImpAnnouncements extends Component {
     return (
       <section className="impAnnouncements-tease">
         <div className="content">
-          <div className="title mt-4 mb-5">Academic Year 2022-2023</div>
+          <div className="title mt-4 mb-5">Academic Year 2023-2024</div>
           <div className="video-header">
             <iframe
               width="560"

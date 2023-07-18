@@ -63,14 +63,14 @@
   font-weight: bold;
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 153, 255, 0.4)),
-    url("./images/convention.png") center center;
+    url("./images/header-background.jpg") center center;
   background-size: cover !important;
 }
 
 #contact-header-title {
   position: absolute;
   z-index: 1;
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   top: 30%;
   left: 10%;
 }

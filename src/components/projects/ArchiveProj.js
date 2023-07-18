@@ -19,9 +19,17 @@ const ProjModal = (props) => {
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <p>
-              (Here we put a short description of what the project was about)
-            </p>
+            <p>{/**Description here */}</p>
+            {props.data.flyer && (
+              <a
+                href={props.data.flyer}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-secondary"
+              >
+                View Flyer
+              </a>
+            )}
             <h4>Skills learned:</h4>
             <ul>
               {props.data.skills.map((item) => (

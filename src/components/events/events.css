@@ -53,6 +53,7 @@
     padding: 5px 20px 5px;
     border-radius: 10px;
     background-color: rgba(19, 19, 21, 0.7);
+    font-size: 2.5rem;
 }
 /* When the class name is "events-main-background" and the CSS properties are changed, the background image size doesn't change at all. 
    Maybe a bug? However, after changing the class name, the changes will show. */
