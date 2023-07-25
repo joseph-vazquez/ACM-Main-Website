@@ -4,7 +4,7 @@
   font-weight: bold;
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 153, 255, 0.4)),
-    url("./images/header-background-image.png") center top;
+    url("./images/classroom-background.jpg") center top;
   background-size: cover !important;
 }
 
