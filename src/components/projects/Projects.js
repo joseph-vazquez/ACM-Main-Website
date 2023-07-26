@@ -78,8 +78,14 @@ class Projects extends React.Component {
               3.{" "}
               <span class="date-disclaimer">
                 {" "}
-                Sign-up due date has passed. Wait until next semester
+                Sign-up due date is Saturday, September 2nd 2023
               </span>
+            </b>
+          </div>
+          <br></br>
+          <div className="disclaimer">
+            <b>
+              4. In archives, have a look on a demo project made by a student.
             </b>
           </div>
         </div>

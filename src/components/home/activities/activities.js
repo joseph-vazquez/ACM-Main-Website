@@ -34,19 +34,19 @@ class Activities extends Component{
           <AnimationOnScroll animateIn="animate__fadeIn" delay="1" animateOnce="true">
             <div className="activity-container">
               <div className="activity">
-                <div className="bg-image" id="projectImage"></div>
+                <a href="/projects" className="bg-image" id="projectImage"></a>
                 <div className="text-box">
                   <a className="label" href="/projects">Project Workshops</a>
                 </div>
               </div>
               <div className="activity">
-                <div className="bg-image" id="mentorshipImage"></div>
+                <a href="/professional" className="bg-image" id="mentorshipImage"></a>
                 <div className="text-box">
-                  <a className="label" href="/programs">PRO-DEV</a>
+                  <a className="label" href="/professional">Events</a>
                 </div>
               </div>
               <div className="activity">
-                <div className="bg-image" id="newsImage"></div>
+                <a href="/events" className="bg-image" id="newsImage"></a>
                 <div className="text-box">
                   <a className="label" href="/events">Calendar</a>
                 </div>
