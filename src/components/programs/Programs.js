@@ -69,7 +69,7 @@ class Programs extends React.Component {
       <div className="programs-body">
         <div className="prodev-header-container">
           <div id="prodev-header-title">
-            Participate in our PRO-DEV Workshops for Spring 2023!
+            Participate in our mentorship program for Fall 2023!
           </div>
         </div>
         {/* 
@@ -84,15 +84,15 @@ class Programs extends React.Component {
           </h3>
           <span className="disclaimer">
             <b>
-              1. You must be a member of ACM to participate in the workshops! If
+              1. ACM membership is required to apply for the mentorship program! If
               you are not a member, you will not be allowed in.
             </b>
           </span>
           <br />
           <span className="disclaimer">
             <b>
-              2. Each workshop has its own dedicated date. Keep track of them,
-              so you won't miss each workshop.
+              2. The mentorship program is a semester-long program and attendance is a must.
+              Sessions are once a week.
             </b>
           </span>
         </div>
@@ -150,18 +150,19 @@ class Programs extends React.Component {
                   <br></br>
                   <div className="mentor-carousel">
                     <Carousel infiniteLoop>
-                      {proDevImageS2023.map((value, index) => {
-                        return (
-                          <div>
-                            <img
-                              className="carousel-leader-image"
-                              src={require("" + value)}
-                              alt="leader"
-                            />
-                            <p className="legend">{proDevNameS2023[index]}</p>
-                          </div>
-                        );
-                      })}
+                      {this.state.currentProgram.speakers 
+                        && this.state.currentProgram.speakers.map((leader)=>{
+                          return (
+                            <div>
+                              <img
+                                className="carousel-leader-image"
+                                src={leader.imgURL}
+                                alt="leader"
+                              />
+                              <p className="legend">{leader.name}</p>
+                            </div>
+                          );
+                        })}
                     </Carousel>
                   </div>
                 </Tab.Pane>

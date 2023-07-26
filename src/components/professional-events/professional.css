@@ -4,14 +4,14 @@
   font-weight: bold;
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 153, 255, 0.4)),
-    url("./images/header-background-image.png") center top;
+    url("./images/classroom-background.jpg") center top;
   background-size: cover !important;
 }
 
 #events-header-title {
   position: absolute;
   z-index: 1;
-  font-size: 5rem;
+  font-size: 3.5rem;
   top: 30%;
   left: 10%;
 }
@@ -62,7 +62,7 @@
 }
 
 .events-header {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   margin-top: 1rem;
   margin-left: 3rem;
   color: white;

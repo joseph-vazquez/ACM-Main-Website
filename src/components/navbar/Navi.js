@@ -108,9 +108,12 @@ class Navi extends React.Component {
                 <NavDropdown.Item href="/projects">
                   <div className="nav-dropdown-text">project workshops</div>
                 </NavDropdown.Item>
+
+                {/* Temporarily disabled due to cancellation
                 <NavDropdown.Item href="/programs">
-                  <div className="nav-dropdown-text">pro-dev</div>
+                  <div className="nav-dropdown-text">mentorship</div>
                 </NavDropdown.Item>
+                */}
                 <NavDropdown.Item href="/professional">
                   <div className="nav-dropdown-text">events</div>
                 </NavDropdown.Item>
@@ -178,9 +181,9 @@ class Navi extends React.Component {
         </Navbar>
         <div class="hover-announcements-background"></div>
         <div class="hover-announcements">
-          Welcome to Fall 2023! Don't miss on this opportunity! Meet up with ACM leaders and build your network
-          at ACM's First General Meeting on Tuesday, August 29th at
-          (room_number).
+          Welcome to Fall 2023! Don't miss on this opportunity! Meet up with ACM
+          leaders and build your network at ACM's First General Meeting on
+          Tuesday, August 29th at FA 219.
         </div>
       </>
     );
