@@ -40,9 +40,9 @@ class Activities extends Component{
                 </div>
               </div>
               <div className="activity">
-                <a href="/programs" className="bg-image" id="mentorshipImage"></a>
+                <a href="/professional" className="bg-image" id="mentorshipImage"></a>
                 <div className="text-box">
-                  <a className="label" href="/programs">Mentorship</a>
+                  <a className="label" href="/professional">Events</a>
                 </div>
               </div>
               <div className="activity">
