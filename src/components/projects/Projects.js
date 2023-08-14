@@ -88,6 +88,11 @@ class Projects extends React.Component {
               4. In archives, have a look on a demo project made by a student.
             </b>
           </div>
+          <div className="disclaimer">
+            <b>
+              5. Please press on the project titles to reveal its detailed information.
+            </b>
+          </div>
         </div>
         {this.state.currentProj && this.state.archiveProj && (
           <Tab.Container defaultActiveKey={this.state.currentProjSem}>
