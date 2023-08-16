@@ -7,6 +7,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import { Carousel } from "react-responsive-carousel";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "./aboutus.css";
+import constitution from "./images/2023-2024 Constitution.pdf"
 
 class AboutUs extends React.Component {
   render() {
@@ -296,7 +297,7 @@ class AboutUs extends React.Component {
                               Feel free to take a look at our Constitution:
                             </li>
                             <Button
-                              href="https://drive.google.com/file/d/1IyTQtJmeOupbVVq_zp9Fdr-0k4jyDHSa/view?usp=sharing"
+                              href={constitution}
                               target="_blank"
                             >
                               Constitution
