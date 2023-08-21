@@ -88,15 +88,27 @@ class Projects extends React.Component {
               4. In archives, have a look on a demo project made by a student.
             </b>
           </div>
+          <br></br>
           <div className="disclaimer">
             <b>
-              5. Please press on the project titles to reveal its detailed information.
+              5. In archives, press on the project titles to reveal its detailed information.
             </b>
           </div>
         </div>
+        <div className="video-header">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/B6H_Jzp_NB4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
         {this.state.currentProj && this.state.archiveProj && (
           <Tab.Container defaultActiveKey={this.state.currentProjSem}>
-            <Nav className="project-tab-label px-3 mx-auto" variant="pills">
+            <Nav className="project-tab-label px-3 pt-3 mx-auto" variant="pills">
               <Nav.Item>
                 <Nav.Link
                   className="btn-primary text-center"
