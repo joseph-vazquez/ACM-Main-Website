@@ -104,9 +104,8 @@ const CurrentProjects = (props) => {
               </Button>
               <Button
                 variant="success"
-                href="https://forms.gle/xw8zgCeCFaWhRPbV9"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdIf1IzGFR7u8kjlTy4GS_ZQpVcgzdIFavdsSf2A8BAgLcdGQ/viewform"
                 size="sm"
-                disabled
               >
                 Join Now!
               </Button>
@@ -169,9 +168,8 @@ const CurrentProjects = (props) => {
               </Button>
               <Button
                 variant="success"
-                href="https://forms.gle/xw8zgCeCFaWhRPbV9"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdG4hsCiknMPzvGUWOt8aewiYZR7UV_xEDjfcAtyQk3nJ9Vfw/viewform"
                 size="sm"
-                disabled
               >
                 Join Now!
               </Button>
