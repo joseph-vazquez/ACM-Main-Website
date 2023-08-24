@@ -166,7 +166,7 @@ class AboutUs extends React.Component {
                       </Col>
                       <Col className="about-us-image" lg={5}>
                         <Image
-                          src={require("./images/Fall2022Board.jpg")}
+                          src={require("./images/Fall2023Board.png")}
                           fluid
                         />
                       </Col>
