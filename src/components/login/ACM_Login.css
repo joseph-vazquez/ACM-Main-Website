@@ -1,0 +1,21 @@
+.loginContainer{
+    display: flex;
+ 
+    align-items: center;
+    flex-direction: column;
+    max-width: 500px;
+    margin:auto;
+    padding: 0 20px;
+    overflow: hidden;
+
+    
+}
+
+.formText{
+    font-size: x-large;
+    color: white;
+}
+
+.textBox{
+   width: 100%;
+}

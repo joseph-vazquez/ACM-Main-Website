@@ -23,6 +23,9 @@ import Success from "./components/membership/CheckoutComponents/Success.js";
 import Portal from "./components/portal/Portal.js";
 import NewBoard from "./components/board/NewBoard";
 import ACM_Login from "./components/login/ACM_Login.js"
+import Admin from "./components/admin/Admin";
+import { Navbar } from "react-bootstrap";
+import { Router, Switch } from "react-router-dom/cjs/react-router-dom.min";
 
 class App extends React.Component {
   constructor(props) {
@@ -64,23 +67,30 @@ class App extends React.Component {
     return (
       <div>
         <BrowserRouter>
-          <Navi />
+
+           
+            <Navi />
           <Route exact path="/" component={Home} />
           {/*<Route exact path='/' render={() => <Body state={this.state}/>}/>*/}
           {/*<Route path="/sponsor" component={Sponsor} />*/}
-          <Route path="/aboutus" component={AboutUs} />
-          <Route path="/calendar" component={Calendar} />
-          <Route path="/membership" component={Membership} />
-          <Route path="/faq" component={FAQ} />
-          <Route path="/contactus" component={ContactUs}/>
-          <Route path="/events" component={Events} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/professional" component={Professional} />
-          <Route path="/board" component={NewBoard} />
-          <Route path="/programs" component={Programs} />
-          <Route path="/portal" component={Portal} />
-          <Route path="/Success" component={SuccessPage} />
-          <Route path="/ACM_Login" component={ACM_Login} />
+            
+            <Route path="/aboutus" component={AboutUs} />
+            <Route path="/calendar" component={Calendar} />
+            <Route path="/membership" component={Membership} />
+            <Route path="/faq" component={FAQ} />
+            <Route path="/contactus" component={ContactUs}/>
+            <Route path="/events" component={Events} />
+            <Route path="/projects" component={Projects} />
+            <Route path="/professional" component={Professional} />
+            <Route path="/board" component={NewBoard} />
+            <Route path="/programs" component={Programs} />
+            <Route path="/portal" component={Portal} />
+            <Route path="/Success" component={SuccessPage} />
+            <Route path="/login" component={ACM_Login} />
+              <Route path="/admin" component={Admin} />
+
+          
+          
           <Route
             path="/discord"
             component={() => {
@@ -88,8 +98,9 @@ class App extends React.Component {
               return null;
             }}
           />
-        </BrowserRouter>
+        
         <FooterCarousel />
+        </BrowserRouter>
       </div>
     );
   }
