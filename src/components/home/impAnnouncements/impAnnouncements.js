@@ -1,7 +1,12 @@
 import React, { Component } from "react";
 import { useState, useEffect } from "react";
-import firebase from "../../professional-events/firebaseConfig.js";
-import {getFirestore, collection, getDocs } from "firebase/firestore";
+import { db } from "../../professional-events/firebaseConfig";
+import {
+  getFirestore,
+  collection,
+  collectionGroup,
+  getDocs,
+} from "firebase/firestore";
 import { Card, Button, Row, Col } from "react-bootstrap";
 import { Carousel } from "react-responsive-carousel";
 
@@ -12,27 +17,30 @@ const ImpAnnouncements = () => {
   const [featuredEvent, setFeatured] = useState(null);
 
   useEffect(() => {
+    (async () => {
+      try {
+        const upcomingEvents = collectionGroup(db, "upcomingEvents");
+        const queryUpcoming = await getDocs(upcomingEvents);
+        const comingUpEvents = [];
+        queryUpcoming.forEach((doc) => {
+          const data = doc.data();
+          comingUpEvents.push(data);
+        });
+        setUpcoming(comingUpEvents);
 
-    async function fetchEvents() {
-      const db = getFirestore(firebase);
-      const queryUpcoming = await getDocs(collection(db, "upcomingEvents"));
-      const comingUpEvents = [];
-      queryUpcoming.forEach((doc) => {
-        const data = doc.data();
-        comingUpEvents.push(data);
-    });
-    setUpcoming(comingUpEvents);
-
-    const queryFeaturedEvents = await getDocs(collection(db, "featuredEvent"));
-    const events = [];
-    queryFeaturedEvents.forEach((doc) => {
-      const data = doc.data();
-      events.push(data);
-    });
-    setFeatured(events);
-    }
-
-    fetchEvents();
+        const featuredEvents = collectionGroup(db, "featuredEvent");
+        const queryFeaturedEvents = await getDocs(featuredEvents);
+        const events = [];
+        queryFeaturedEvents.forEach((doc) => {
+          const data = doc.data();
+          events.push(data);
+        });
+        setFeatured(events);
+      } catch (err) {
+        console.log("Error occured when fetching events");
+      }
+    })();
+  }, []);
 
     // firebase
     //   .firestore()
@@ -60,7 +68,6 @@ const ImpAnnouncements = () => {
     //     setFeatured(events);
     //   })
     //   .catch((error) => console.log(error));
-  }, []);
 
   let links = ["https://forms.gle/hAjvNSbS47ghMxuE8"];
 

@@ -1,5 +1,5 @@
 import React from "react";
-import firebase from "../professional-events/firebaseConfig.js";
+import { firebase, db } from "../professional-events/firebaseConfig";
 import {getFirestore, collection, getDocs} from "firebase/firestore";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Tab, Nav, NavDropdown } from "react-bootstrap";
@@ -8,6 +8,8 @@ import "./Projects.css";
 import CurrentProjects from "./CurrentProjects.js";
 import PastProjects from "./PastProjects.js";
 import ArchiveProj from "./ArchiveProj.js";
+
+import { collectionGroup } from "firebase/firestore";
 
 class Projects extends React.Component {
   constructor(props) {
@@ -20,12 +22,10 @@ class Projects extends React.Component {
 
   }
 
+  //fetching projects from database
   async componentDidMount() {
-    //this method call access all projects in reverse order
-    //after sorting in reverse, latest projects is the first element
-
-      const db = getFirestore(firebase);
-      const queryWorkshops = await getDocs(collection(db, "project_workshop"));
+      const projs = collectionGroup(db, "project_workshop")
+      const queryWorkshops = await getDocs(projs);
       const project = [];
 
       queryWorkshops.forEach((doc) => {
