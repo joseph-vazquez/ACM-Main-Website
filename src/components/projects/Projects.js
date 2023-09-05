@@ -1,5 +1,6 @@
 import React from "react";
 import firebase from "../professional-events/firebaseConfig.js";
+import {getFirestore, collection, getDocs} from "firebase/firestore";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Tab, Nav, NavDropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
@@ -16,28 +17,48 @@ class Projects extends React.Component {
       currentProj: null,
       archiveProj: null,
     };
+
   }
 
-  componentDidMount() {
+  async componentDidMount() {
     //this method call access all projects in reverse order
     //after sorting in reverse, latest projects is the first element
-    firebase
-      .firestore()
-      .collection("project_workshop")
-      .get()
-      .then((snapshot) => {
-        const project = [];
-        snapshot.forEach((doc) => {
-          const data = doc.data();
-          project.push(data);
-        });
-        this.setState({ currentProjSem: project.reverse()[0].semester });
-        this.setState({ currentProj: project.shift() });
-        this.setState({ archiveProj: project });
-        console.log(this.state.currentProj);
-        console.log(this.state.currentProj.level.advanced.flyer);
-      })
-      .catch((error) => console.log(error));
+
+      const db = getFirestore(firebase);
+      const queryWorkshops = await getDocs(collection(db, "project_workshop"));
+      const project = [];
+
+      queryWorkshops.forEach((doc) => {
+        const data = doc.data();
+        project.push(data);
+      });
+      this.setState({ currentProjSem: project.reverse()[0].semester });
+      this.setState({ currentProj: project.shift() });
+      this.setState({ archiveProj: project });
+      console.log(this.state.currentProj);
+      console.log(this.state.currentProj.level.advanced.flyer);
+
+
+    
+
+    // fetchEvents();
+    // firebase
+    //   .firestore()
+    //   .collection("project_workshop")
+    //   .get()
+    //   .then((snapshot) => {
+    //     const project = [];
+    //     snapshot.forEach((doc) => {
+    //       const data = doc.data();
+    //       project.push(data);
+    //     });
+    //     this.setState({ currentProjSem: project.reverse()[0].semester });
+    //     this.setState({ currentProj: project.shift() });
+    //     this.setState({ archiveProj: project });
+    //     console.log(this.state.currentProj);
+    //     console.log(this.state.currentProj.level.advanced.flyer);
+    //   })
+    //   .catch((error) => console.log(error));
   }
 
   render() {

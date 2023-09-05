@@ -1,6 +1,7 @@
 import React from "react";
 import "./professional.css";
-import firebase from "./firebaseConfig.js";
+import firebase from "./firebaseConfig.js"; 
+import {getFirestore, collection, getDocs} from "firebase/firestore"
 import { Card, Button, Image } from "react-bootstrap";
 
 /*
@@ -20,34 +21,60 @@ class Professional extends React.Component {
     seeMore: false,
   };
 
-  componentDidMount() {
-    firebase
-      .firestore()
-      .collection("semesterEvents")
-      .get()
-      .then((snapshot) => {
-        const events = [];
-        snapshot.forEach((doc) => {
-          const data = doc.data();
-          events.push(data);
-        });
-        this.setState({ semesterEvent: events });
-      })
-      .catch((error) => console.log(error));
+   async componentDidMount() {
 
-    firebase
-      .firestore()
-      .collection("upcomingEvents")
-      .get()
-      .then((snapshot) => {
-        const comingUpEvent = [];
-        snapshot.forEach((doc) => {
-          const data = doc.data();
-          comingUpEvent.push(data);
-        });
-        this.setState({ upcomingEvent: comingUpEvent });
+   
+      const db = getFirestore(firebase);
+      
+      const queryAllSemester = await getDocs(collection( db,"semesterEvents"));
+      const events = [];
+      queryAllSemester.forEach((doc) => {
+        const data = doc.data();
+        events.push(data);
+      });
+
+      this.setState({semesterEvent: events});
+    
+
+      const queryAllUpcoming = await getDocs(collection( db, "upcomingEvents"))
+      const comingUpEvents = [];
+      queryAllUpcoming.forEach((doc) => {
+        const data = doc.data();
+        comingUpEvents.push(data);
       })
-      .catch((error) => console.log(error));
+  
+      this.setState({upcomingEvent: comingUpEvents});
+    
+
+
+
+    // firebase
+    //   .firestore()
+    //   .collection("semesterEvents")
+    //   .get()
+    //   .then((snapshot) => {
+    //     const events = [];
+    //     snapshot.forEach((doc) => {
+    //       const data = doc.data();
+    //       events.push(data);
+    //     });
+    //     this.setState({ semesterEvent: events });
+    //   })
+    //   .catch((error) => console.log(error));
+
+    // firebase
+    //   .firestore()
+    //   .collection("upcomingEvents")
+    //   .get()
+    //   .then((snapshot) => {
+    //     const comingUpEvent = [];
+    //     snapshot.forEach((doc) => {
+    //       const data = doc.data();
+    //       comingUpEvent.push(data);
+    //     });
+    //     this.setState({ upcomingEvent: comingUpEvent });
+    //   })
+    //   .catch((error) => console.log(error));
   }
 
   test() {
@@ -145,62 +172,62 @@ class Professional extends React.Component {
             <div class="images">
               <Image
                 style={{ width: "350px", height: "30rem", margin: "1em" }}
-                src={require("./images/google-ama-event-fall-2022.jpg")}
+                src={require("./images/google-ama-event-fall-2022.jpg").default}
                 thumbnail
               />
               <Image
                 style={{ width: "350px", height: "30rem", margin: "1em" }}
-                src={require("./images/Hackathon-Flyer-Fall-2022.png")}
+                src={require("./images/Hackathon-Flyer-Fall-2022.png").default}
                 thumbnail
               />
               <Image
                 style={{ width: "350px", height: "30rem", margin: "1em" }}
-                src={require("./images/Mentorship-fall-2022.png")}
+                src={require("./images/Mentorship-fall-2022.png").default}
                 thumbnail
               />
               <Image
                 style={{ width: "350px", height: "30rem", margin: "1em" }}
-                src={require("./images/Black-Panther-Wakanda-Forever-fall-2022.png")}
+                src={require("./images/Black-Panther-Wakanda-Forever-fall-2022.png").default}
                 thumbnail
               />
               <Image
                 style={{ width: "350px", height: "30rem", margin: "1em" }}
-                src={require("./images/github-workshop.PNG")}
+                src={require("./images/github-workshop.PNG").default}
                 thumbnail
               />
               <Image
                 style={{ width: "350px", height: "30rem", margin: "1em" }}
-                src={require("./images/mwd-jpl-spring-2019.png")}
+                src={require("./images/mwd-jpl-spring-2019.png").default}
                 thumbnail
               />
               <Image
                 style={{ width: "350px", height: "30rem", margin: "1em" }}
-                src={require("./images/spring-2019-resume-workshop.png")}
+                src={require("./images/spring-2019-resume-workshop.png").default}
                 thumbnail
               />
               <Image
                 style={{ width: "350px", height: "30rem", margin: "1em" }}
-                src={require("./images/richard-fung-2018-google.png")}
+                src={require("./images/richard-fung-2018-google.png").default}
                 thumbnail
               />
               <Image
                 style={{ width: "350px", height: "30rem", margin: "1em" }}
-                src={require("./images/internship.png")}
+                src={require("./images/internship.png").default}
                 thumbnail
               />
               <Image
                 style={{ width: "350px", height: "30rem", margin: "1em" }}
-                src={require("./images/manny-sanchez-lockheed-spring-2019.png")}
+                src={require("./images/manny-sanchez-lockheed-spring-2019.png").default}
                 thumbnail
               />
               <Image
                 style={{ width: "350px", height: "30rem", margin: "1em" }}
-                src={require("./images/linkedin-handshake-workshop.png")}
+                src={require("./images/linkedin-handshake-workshop.png").default}
                 thumbnail
               />
               <Image
                 style={{ width: "350px", height: "30rem", margin: "1em" }}
-                src={require("./images/google-ama-event-fall-2022.jpg")}
+                src={require("./images/google-ama-event-fall-2022.jpg").default}
                 thumbnail
               />
             </div>

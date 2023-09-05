@@ -3,6 +3,7 @@ import { Row, Col, Tab, Dropdown, DropdownButton } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import "./board.css";
 import firebase from "../professional-events/firebaseConfig.js";
+
 import BoardLeaders from "./BoardLeaders";
 import backdrop from "./img/bluebackdrop.jpg";
 
