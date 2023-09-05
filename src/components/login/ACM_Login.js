@@ -2,22 +2,22 @@
 import React from "react";
 import './ACM_Login.scss';
 import { useState } from "react";
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth"
-
+import { auth } from "../professional-events/firebaseConfig";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { useHistory } from "react-router-dom";
  
 const ACM_Login = () => {
-    const[email, setEmail] = useState();
-    const[password, setPassword] = useState();
-
-
+    const[email, setEmail] = useState("");
+    const[password, setPassword] = useState("");
+    const history = useHistory();
 
     const handleRegister = (e) => {
         e.preventDefault();
-        const auth = getAuth();
         signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) =>  {
             //sighned in
             console.log('Loging Successfully');
+            history.push("./admin");
         })
         .catch((error) => {
             const errorCode = error.code;
