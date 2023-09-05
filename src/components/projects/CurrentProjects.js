@@ -59,10 +59,7 @@ const CurrentProjects = (props) => {
                 Beginners Workshop
               </Card.Title>
               <Card.Text className="currentDesc p-2">
-                Interested of making your own website portfolio? In this
-                workshop series, we will be using HTML and CSS to create your
-                very own portfolio, to which it could be used with resumes in
-                the workforce!
+                Interested in app development? Improve on your critical thinking and programming skills by developing a wordle game in our beginners workshop.
                 <Collapse in={begOpen}>
                   <div>
                     <div class="skills-section my-4">
@@ -106,6 +103,7 @@ const CurrentProjects = (props) => {
                 variant="success"
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdIf1IzGFR7u8kjlTy4GS_ZQpVcgzdIFavdsSf2A8BAgLcdGQ/viewform"
                 size="sm"
+                disabled
               >
                 Join Now!
               </Button>
@@ -122,10 +120,8 @@ const CurrentProjects = (props) => {
             <Card.Body>
               <Card.Title className="shadow mb-3">Advanced Workshop</Card.Title>
               <Card.Text className="currentDesc p-2">
-                Interested in game development? In this workshop series, we are
-                using Java and Forge to create and implement a mod that will be
-                used in Minecraft, one of the most played games in gaming
-                history.
+                Interested in game development? In this advanced workshop series, we are
+                using C# and Unity game engine to create and implement a 2 dimensional plaform game.
                 <Collapse in={advOpen}>
                   <div>
                     <div class="skills-section my-4">
@@ -170,6 +166,7 @@ const CurrentProjects = (props) => {
                 variant="success"
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdG4hsCiknMPzvGUWOt8aewiYZR7UV_xEDjfcAtyQk3nJ9Vfw/viewform"
                 size="sm"
+                disabled
               >
                 Join Now!
               </Button>
