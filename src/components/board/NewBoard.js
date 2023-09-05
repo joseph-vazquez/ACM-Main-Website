@@ -1,50 +1,34 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { Tab, Row, Nav, Col } from "react-bootstrap";
-import firebase from "../professional-events/firebaseConfig.js";
-import {collection, getDocs, getFirestore} from "firebase/firestore"
+import { firebase, db } from "../professional-events/firebaseConfig.js";
+import {
+  collection,
+  collectionGroup,
+  getDocs,
+  getFirestore,
+} from "firebase/firestore";
 import logo from "./img/acm_logo.png";
 import BoardLeaders from "./BoardLeaders";
 const NewBoard = () => {
   const [currentBoard, setBoard] = useState(null);
+
   useEffect(() => {
+    (async () => {
+      try {
+        const boardCollection = collectionGroup(db, "acm_board");
+        const queryBoardMembers = await getDocs(boardCollection);
+        const board = [];
 
-    async function fetchBoardMembers() {
-
-      const db = getFirestore(firebase);
-      const queryBoardMembers = await getDocs(collection(db, "acm_board"));
-      const board = [];
-
-      queryBoardMembers.forEach((doc) => {
-        const data = doc.data();
-        board.push(data);
-      });
-      setBoard(board.reverse()[0]);
-
-
-    }
-
-    fetchBoardMembers();
-
-    
-
-    // firebase
-    //   .firestore()
-    //   .collection("acm_board")
-    //   .get()
-    //   .then((snapshot) => {
-    //     const board = [];
-    //     snapshot.forEach((doc) => {
-    //       const data = doc.data();
-    //       board.push(data);
-    //     });
-    //     setBoard(board.reverse()[0]);
-    //   })
-    //   .catch((error) => console.log(error));
-
-    return () => {
-      setBoard({});
-    };
+        queryBoardMembers.forEach((doc) => {
+          const data = doc.data();
+          board.push(data);
+        });
+        setBoard(board.reverse()[0]);
+      } catch (err) {
+        console.log("Error occured when fetching board");
+      }
+    })();
   }, []);
 
   return (
@@ -132,7 +116,9 @@ const NewBoard = () => {
                     {currentBoard.leaders.committee &&
                       currentBoard.leaders.committee.map((group) => (
                         <>
-                          <h3 class="text-light" align="center">{group.role_group}</h3>
+                          <h3 class="text-light" align="center">
+                            {group.role_group}
+                          </h3>
                           <div class="card-deck justify-content-center align-items-center mb-5 text-light">
                             {group.members.map((member) => (
                               <BoardLeaders leader={member} />
