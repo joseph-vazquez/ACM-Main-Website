@@ -1,12 +1,18 @@
 import React, { Component } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
-import { Row, Col, Image } from 'react-bootstrap';
+import { Row, Col, Image} from 'react-bootstrap';
+
+// import Image from "./images/FirstGeneralMeetingFall2022.jpg";
+
+
 
 import "./aboutus.scss";
 
+
 class AboutUs extends Component {
   render() {
+
     return (
 
       <section className="AboutUs-tease">
@@ -43,7 +49,7 @@ class AboutUs extends Component {
             <Row className="justify-content-center mb-5">
               <Col xs={11} sm={10} lg={8} xl={7}>
                 <AnimationOnScroll animateIn="animate__fadeIn" delay="1" animateOnce="true">
-                  <Image src={require('./images/FirstGeneralMeetingFall2022.jpg')} fluid />
+                  <Image src={require('./images/FirstGeneralMeetingFall2022.jpg').default}  fluid/>
                 </AnimationOnScroll>
               </Col>
             </Row>

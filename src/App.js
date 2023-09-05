@@ -66,10 +66,11 @@ class App extends React.Component {
     const SuccessPage = () => <Route path="/Success" component={Success} />;
     return (
       <div>
+        
         <BrowserRouter>
 
            
-            <Navi />
+            {/* <Navi /> */}
           <Route exact path="/" component={Home} />
           {/*<Route exact path='/' render={() => <Body state={this.state}/>}/>*/}
           {/*<Route path="/sponsor" component={Sponsor} />*/}

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { useState, useEffect } from "react";
 import firebase from "../../professional-events/firebaseConfig.js";
+import {getFirestore, collection, getDocs } from "firebase/firestore";
 import { Card, Button, Row, Col } from "react-bootstrap";
 import { Carousel } from "react-responsive-carousel";
 
@@ -11,32 +12,54 @@ const ImpAnnouncements = () => {
   const [featuredEvent, setFeatured] = useState(null);
 
   useEffect(() => {
-    firebase
-      .firestore()
-      .collection("upcomingEvents")
-      .get()
-      .then((snapshot) => {
-        const events = [];
-        snapshot.forEach((doc) => {
-          const data = doc.data();
-          events.push(data);
-        });
-        setUpcoming(events);
-      })
-      .catch((error) => console.log(error));
-    firebase
-      .firestore()
-      .collection("featuredEvent")
-      .get()
-      .then((snapshot) => {
-        const events = [];
-        snapshot.forEach((doc) => {
-          const data = doc.data();
-          events.push(data);
-        });
-        setFeatured(events);
-      })
-      .catch((error) => console.log(error));
+
+    async function fetchEvents() {
+      const db = getFirestore(firebase);
+      const queryUpcoming = await getDocs(collection(db, "upcomingEvents"));
+      const comingUpEvents = [];
+      queryUpcoming.forEach((doc) => {
+        const data = doc.data();
+        comingUpEvents.push(data);
+    });
+    setUpcoming(comingUpEvents);
+
+    const queryFeaturedEvents = await getDocs(collection(db, "featuredEvent"));
+    const events = [];
+    queryFeaturedEvents.forEach((doc) => {
+      const data = doc.data();
+      events.push(data);
+    });
+    setFeatured(events);
+    }
+
+    fetchEvents();
+
+    // firebase
+    //   .firestore()
+    //   .collection("upcomingEvents")
+    //   .get()
+    //   .then((snapshot) => {
+    //     const events = [];
+    //     snapshot.forEach((doc) => {
+    //       const data = doc.data();
+    //       events.push(data);
+    //     });
+    //     setUpcoming(events);
+    //   })
+    //   .catch((error) => console.log(error));
+    // firebase
+    //   .firestore()
+    //   .collection("featuredEvent")
+    //   .get()
+    //   .then((snapshot) => {
+    //     const events = [];
+    //     snapshot.forEach((doc) => {
+    //       const data = doc.data();
+    //       events.push(data);
+    //     });
+    //     setFeatured(events);
+    //   })
+    //   .catch((error) => console.log(error));
   }, []);
 
   let links = ["https://forms.gle/hAjvNSbS47ghMxuE8"];
@@ -53,7 +76,7 @@ const ImpAnnouncements = () => {
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
         <div className="description mt-3">
