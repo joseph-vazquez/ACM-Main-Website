@@ -1,7 +1,7 @@
 import React from "react";
 import "./professional.css";
-import firebase from "./firebaseConfig.js"; 
-import {getFirestore, collection, getDocs} from "firebase/firestore"
+import {firebase, db} from "./firebaseConfig.js";
+import { getFirestore, collection, getDocs, collectionGroup } from "firebase/firestore";
 import { Card, Button, Image } from "react-bootstrap";
 
 /*
@@ -21,32 +21,26 @@ class Professional extends React.Component {
     seeMore: false,
   };
 
-   async componentDidMount() {
+  async componentDidMount() {
+    const semesterEvents = collectionGroup(db, "semesterEvents");
+    const queryAllSemester = await getDocs(semesterEvents);
+    const events = [];
+    queryAllSemester.forEach((doc) => {
+      const data = doc.data();
+      events.push(data);
+    });
 
-   
-      const db = getFirestore(firebase);
-      
-      const queryAllSemester = await getDocs(collection( db,"semesterEvents"));
-      const events = [];
-      queryAllSemester.forEach((doc) => {
-        const data = doc.data();
-        events.push(data);
-      });
+    this.setState({ semesterEvent: events });
 
-      this.setState({semesterEvent: events});
-    
+    const upcomingEvents = collectionGroup(db, "upcomingEvents");
+    const queryAllUpcoming = await getDocs(upcomingEvents);
+    const comingUpEvents = [];
+    queryAllUpcoming.forEach((doc) => {
+      const data = doc.data();
+      comingUpEvents.push(data);
+    });
 
-      const queryAllUpcoming = await getDocs(collection( db, "upcomingEvents"))
-      const comingUpEvents = [];
-      queryAllUpcoming.forEach((doc) => {
-        const data = doc.data();
-        comingUpEvents.push(data);
-      })
-  
-      this.setState({upcomingEvent: comingUpEvents});
-    
-
-
+    this.setState({ upcomingEvent: comingUpEvents });
 
     // firebase
     //   .firestore()
@@ -187,7 +181,10 @@ class Professional extends React.Component {
               />
               <Image
                 style={{ width: "350px", height: "30rem", margin: "1em" }}
-                src={require("./images/Black-Panther-Wakanda-Forever-fall-2022.png").default}
+                src={
+                  require("./images/Black-Panther-Wakanda-Forever-fall-2022.png")
+                    .default
+                }
                 thumbnail
               />
               <Image
@@ -202,7 +199,9 @@ class Professional extends React.Component {
               />
               <Image
                 style={{ width: "350px", height: "30rem", margin: "1em" }}
-                src={require("./images/spring-2019-resume-workshop.png").default}
+                src={
+                  require("./images/spring-2019-resume-workshop.png").default
+                }
                 thumbnail
               />
               <Image
@@ -217,12 +216,17 @@ class Professional extends React.Component {
               />
               <Image
                 style={{ width: "350px", height: "30rem", margin: "1em" }}
-                src={require("./images/manny-sanchez-lockheed-spring-2019.png").default}
+                src={
+                  require("./images/manny-sanchez-lockheed-spring-2019.png")
+                    .default
+                }
                 thumbnail
               />
               <Image
                 style={{ width: "350px", height: "30rem", margin: "1em" }}
-                src={require("./images/linkedin-handshake-workshop.png").default}
+                src={
+                  require("./images/linkedin-handshake-workshop.png").default
+                }
                 thumbnail
               />
               <Image
