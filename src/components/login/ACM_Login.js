@@ -20,6 +20,7 @@ const ACM_Login = () => {
             history.push("./admin");
         })
         .catch((error) => {
+            alert("Wrong credentials")
             const errorCode = error.code;
             const errorMessage = error.message;
         }) ;
