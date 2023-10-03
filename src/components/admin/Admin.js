@@ -3,7 +3,11 @@ import React from "react";
 const Admin = () => {
 
     return(
-        <div></div>
+        <div>
+            {/* <Board/> */}
+            {/* <Projects/> */}
+            {/* <Events/> */}
+        </div>
     )
 
 }
