@@ -16,11 +16,11 @@ class AboutUs extends Component {
     return (
 
       <section className="AboutUs-tease">
-        
+
           <div className="content">
-          
+
             <div id="blue-rectangle"></div>
-            
+
             <Row>
               <div className="who-are-we-content">
                 <AnimationOnScroll animateIn="animate__fadeIn" delay="1" animateOnce="true">
@@ -29,14 +29,12 @@ class AboutUs extends Component {
 
                 <AnimationOnScroll animateIn="animate__fadeIn" delay="1" animateOnce="true">
                   <div className="description">
-                    We are a chapter of Association for Computing Machinery at
-                    California State University, Los Angeles. We bring students with
-                    a common passion and devotion into the field of computing.
+                    We are very cool! .
                   </div>
                 </AnimationOnScroll>
               </div>
             </Row>
-            
+
             <Row>
               <div className="link-btn">
                 <AnimationOnScroll animateIn="animate__fadeIn" delay="1" animateOnce="true">
@@ -54,7 +52,7 @@ class AboutUs extends Component {
               </Col>
             </Row>
           </div>
-        
+
           {/* <div className="left">
             <div className="content">
               <div className="subTitle"> acm@calstatela </div>
@@ -74,7 +72,7 @@ class AboutUs extends Component {
           </div>
           <div className="right"></div> */}
       </section>
-      
+
     );
   }
 }
